@@ -18,7 +18,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
- * Created by NB on 2017/8/7.
+ * Created by NB on 2017/8/7.alksdjlfkja
  *
  *              查看库存
  */
@@ -26,6 +26,7 @@ import java.sql.SQLException;
 public class GetInStoreNum extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setCharacterEncoding("UTF-8");
+        request.setCharacterEncoding("UTF-8");
         String parameter = request.getParameter("json");
         String version = request.getParameter("version");
         String SQL;

@@ -58,8 +58,8 @@ public class GetPici extends HttpServlet {
                     container.add(instorageNum);
                 }
                 if(container.size()>0){
-                    downloadReturnBean.InstorageNum=container;
                     System.out.println("GetPici返回数据："+container.toString());
+                    downloadReturnBean.InstorageNum=container;
                     response.getWriter().write(CommonJson.getCommonJson(true,new Gson().toJson(downloadReturnBean)));
                 }else{
                     response.getWriter().write(CommonJson.getCommonJson(false,"未找到数据"));

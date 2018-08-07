@@ -382,14 +382,14 @@ public class DownloadInfo extends HttpServlet {
     private ArrayList<User> getUser(Statement statement, ResultSet rSet, String version, DownloadReturnBean dBean) {
         ArrayList<User> container = new ArrayList<DownloadReturnBean.User>();
 
-//        String sql = "select FUserID,FName,'' as FPassWord,FEmpID,FPrimaryGroup as " +
-//                "FGroupName,'' as FPermit from t_User where abs(FUserID) between " +
-//                "16384 and 2147483647 Order By FUserID";
-        String sql = "select t1.FUserID,t1.FName,t2.FPassWord,FEmpID,FPrimaryGroup as " +
-                "FGroupName,'' as FPermit from t_User t1 left join  t_UserPermitPC t2 on " +
-                "t1.FUserID=t2.FUserID where abs(t1.FUserID) between 16384 and 2147483647 " +
-                "and t2.FRemark in('一般权限','管理员权限','保管员权限') or t1.FName " +
-                "in('Administrator','Manager') Order By t1.FUserID";
+        String sql = "select FUserID,FName,'' as FPassWord,FEmpID,FPrimaryGroup as " +
+                "FGroupName,'' as FPermit from t_User where abs(FUserID) between " +
+                "16384 and 2147483647 Order By FUserID";
+//        String sql = "select t1.FUserID,t1.FName,t2.FPassWord,FEmpID,FPrimaryGroup as " +
+//                "FGroupName,'' as FPermit from t_User t1 left join  t_UserPermitPC t2 on " +
+//                "t1.FUserID=t2.FUserID where abs(t1.FUserID) between 16384 and 2147483647 " +
+//                "and t2.FRemark in('一般权限','管理员权限','保管员权限') or t1.FName " +
+//                "in('Administrator','Manager') Order By t1.FUserID";
         try {
             rSet = statement.executeQuery(sql);
             while (rSet.next()) {
@@ -555,14 +555,14 @@ public class DownloadInfo extends HttpServlet {
         if (version.contains("5001")) {
             sql = "select FItemID,FEmpID,FName,FNumber,FTypeID,FSPGroupID,FGroupID," +
                     "FStockGroupID,FIsStockMgr,FUnderStock from t_Stock where FTypeID " +
-                    "not in (501,502,503)";//k3 rise 12.3
+                    "not in (501,502,503) AND FDeleteD=0";//k3 rise 12.3
         } else if (version.equals("800103" )|| version.equals("800102")) {
             sql = "select t1.FItemID,t1.FEmpID,t1.FName,t1.FNumber,t1.FTypeID,t1.FSPGroupID," +
                     "t1.FGroupID,t1.FStockGroupID,t1.FIsStockMgr,t1.FUnderStock from t_Stock" +
                     " t1 left join t_Item t2 on t1.FItemID=t2.FItemID WHERE t2.FItemClassID=5 AND t2.FDetail=1  AND (((FTypeID not in (501,502,503)) and FTypeID <> 504)) AND t2.FDeleteD=0 "; //���k3
         } else {
             sql = "select FItemID,FEmpID,FName,FNumber,FTypeID,FSPGroupID,FGroupID,FStockGroupID," +
-                    "FIsStockMgr,'' as FUnderStock from t_Stock";//רҵ��
+                    "FIsStockMgr,'' as FUnderStock from t_Stock where FDeleteD=0 ";//רҵ��
         }
 
         try {
@@ -643,7 +643,7 @@ public class DownloadInfo extends HttpServlet {
 
     private ArrayList<employee> getEmployee(Statement statement, ResultSet rSet, String version, DownloadReturnBean dBean) {
         ArrayList<employee> container = new ArrayList<>();
-        String sql = "select FItemID,FName,FNumber,FDepartmentID,FEmpGroup,FEmpGroupID from t_Emp where FItemID>0 order by FName collate Chinese_PRC_CI_AS";
+        String sql = "select FItemID,FName,FNumber,FDepartmentID,FEmpGroup,FEmpGroupID from t_Emp where FItemID>0 and FDeleteD=0 order by FName collate Chinese_PRC_CI_AS";
         try {
             rSet = statement.executeQuery(sql);
             while (rSet.next()) {
