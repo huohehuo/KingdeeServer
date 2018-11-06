@@ -556,7 +556,7 @@ public class DownloadInfo extends HttpServlet {
             sql = "select FItemID,FEmpID,FName,FNumber,FTypeID,FSPGroupID,FGroupID," +
                     "FStockGroupID,FIsStockMgr,FUnderStock from t_Stock where FTypeID " +
                     "not in (501,502,503) AND FDeleteD=0";//k3 rise 12.3
-        } else if (version.equals("800103" )|| version.equals("800102")) {
+        } else if (version.contains("80010" )) {
             sql = "select t1.FItemID,t1.FEmpID,t1.FName,t1.FNumber,t1.FTypeID,t1.FSPGroupID," +
                     "t1.FGroupID,t1.FStockGroupID,t1.FIsStockMgr,t1.FUnderStock from t_Stock" +
                     " t1 left join t_Item t2 on t1.FItemID=t2.FItemID WHERE t2.FItemClassID=5 AND t2.FDetail=1  AND (((FTypeID not in (501,502,503)) and FTypeID <> 504)) AND t2.FDeleteD=0 "; //���k3

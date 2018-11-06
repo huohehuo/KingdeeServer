@@ -62,10 +62,12 @@ public class SetPropties extends HttpServlet {
 					sta = conn.prepareStatement("select * from p_CreateProc where FVersion=? order by FDescription");
 					sta.setString(1, VersionResulr);
 					rs = sta.executeQuery();
+					int updateNum=0;
 						while (rs.next()) {
 							try{
 								int result = sta1.executeUpdate(rs.getString("FSqlStr"));
 								System.out.println( rs.getString("FRemark")+"ִ执行结果："+result+"");
+								updateNum++;
 								if(result!=-1&&result!=0){
 									response.getWriter().write(CommonJson.getCommonJson(false,"result:"+result+"\r\n错误项目"+ rs.getString("FRemark")));
 								}
@@ -75,9 +77,12 @@ public class SetPropties extends HttpServlet {
 							}
 							
 						}
-						if(rs.isAfterLast()){
-							response.getWriter().write(CommonJson.getCommonJson(true,VersionResulr));
-						}				
+					if(updateNum>0&&rs.isAfterLast()){
+						response.getWriter().write(CommonJson.getCommonJson(true,VersionResulr));
+					}else{
+						response.getWriter().write(CommonJson.getCommonJson(false,"配置错误,请确认指定文件是否防止正确"));
+
+					}
 				}else{
 					response.getWriter().write(CommonJson.getCommonJson(false, "未查询到语句"));
 				}

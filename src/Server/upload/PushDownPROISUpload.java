@@ -37,7 +37,7 @@ public class PushDownPROISUpload extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.setCharacterEncoding("UTF-8");
-		request.setCharacterEncoding("GBK");
+		request.setCharacterEncoding("UTF-8");
 		String parameter = request.getParameter("json");
 		Gson gson = new Gson();
 		Connection conn = null;

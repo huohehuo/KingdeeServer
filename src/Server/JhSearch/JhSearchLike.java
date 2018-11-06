@@ -59,15 +59,13 @@ public class JhSearchLike extends HttpServlet {
                 if(rs!=null){
                     int i = rs.getRow();
                     System.out.println("rs的长度"+i);
-                    while (rs.next()) {
+                        while (rs.next()) {
                         DownloadReturnBean.GetGoodsDepartment bean = downloadReturnBean.new GetGoodsDepartment();
                         bean.FItemID = rs.getString("FItemID");
                         bean.FDeleted = rs.getString("FDeleted");
                         bean.FNumber = rs.getString("FNumber");
                         bean.FName = rs.getString("FName");
                         bean.FDetail = rs.getString("FDetail");
-                        container.add(bean);
-
                         container.add(bean);
                     }
                     System.out.println("获得供应商数据："+container.toString());

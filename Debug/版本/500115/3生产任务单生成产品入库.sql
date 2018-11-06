@@ -135,7 +135,7 @@ declare @FEntryID varchar(20),       --新的明细序号
 	 
 	--select @FSourceBillNo=FBillNo from POOrder where FInterID=@FSourceInterId --下推的单据编号
 	--select @FAuxQtyMust = FAuxQty-FAuxCommitQty from POOrderEntry where FInterID=@FSourceInterId and FEntryID=@FSourceEntryID
-	select @FAuxQtyMust=FAuxQtyPass-FAuxCommitQty,@FSourceBillNo=FBillNo from ICMO where FInterID=@FSourceInterId
+	select @FAuxQtyMust=FAuxQtyPass-FAuxCommitQty,@FSourceBillNo=FBillNo,@FDeptID=FWorkShop from ICMO where FInterID=@FSourceInterId
 	select @FCoefficient=FCoefficient from t_MeasureUnit where FMeasureUnitID=@FUnitID --单位换算率
 	set @FQtyMust=@FAuxQtyMust*@FCoefficient --基本单位可验收的数量 
 	select @FPlanPrice=isnull(FPlanPrice,0) from t_ICItem where   FItemID=@FItemID 
@@ -178,6 +178,7 @@ end
 set @detailqty=@detailqty+1
 end
 EXEC p_UpdateBillRelateData 2,@FInterID,'ICStockBill','ICStockBillEntry' 
+update ICStockBill set FDeptID=@FDeptID where FInterID=@FInterID
  declare @fcheck_fail int
 declare @fsrccommitfield_prevalue decimal(28,13)
 declare @fsrccommitfield_endvalue decimal(28,13)

@@ -36,7 +36,7 @@ public class GetPici extends HttpServlet {
             conn = JDBCUtil.getConn(getDataBaseUrl.getUrl(request.getParameter("sqlip"), request.getParameter("sqlport"), request.getParameter("sqlname")), request.getParameter("sqlpass"), request.getParameter("sqluser"));
             System.out.println(request.getParameter("sqlip")+" "+request.getParameter("sqlport")+" "+request.getParameter("sqlname")+" "+request.getParameter("sqlpass")+" "+request.getParameter("sqluser"));
             String SQL = "select FItemID,FStockID,convert(float,FQty) as FQty,FBal,FStockPlaceID,FKFPeriod," +
-                    "FKFDate,FBatchNo FROM ICInventory WHERE FItemID = ? AND FStockID = ? AND FStockPlaceID=?";
+                    "FKFDate,FBatchNo FROM ICInventory WHERE FQty<>0 AND FItemID = ? AND FStockID = ? AND FStockPlaceID=?";
             sta = conn.prepareStatement(SQL);
             sta.setString(1,gBean.ProductID);
             sta.setString(2,gBean.StorageID);
