@@ -1,4 +1,5 @@
 package Utils;
+import javax.servlet.http.HttpServletRequest;
 import java.sql.*;
 
 public class JDBCUtil {
@@ -10,6 +11,12 @@ public class JDBCUtil {
 		return DriverManager.getConnection(url, user, password);
 		
 	}
+	//简化getConn连接
+	public static Connection getConn(HttpServletRequest request) throws SQLException, ClassNotFoundException{
+		System.out.println(request.getParameter("sqlip") + " " + request.getParameter("sqlport") + " " + request.getParameter("sqlname") + " " + request.getParameter("sqlpass") + " " + request.getParameter("sqluser"));
+		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+		return DriverManager.getConnection(getDataBaseUrl.getUrl(request), request.getParameter("sqluser"), request.getParameter("sqlpass"));
+	}
 	
 	public static Connection getSQLiteConn() throws ClassNotFoundException, SQLException{
 		Class.forName("org.sqlite.JDBC");
@@ -20,6 +27,12 @@ public class JDBCUtil {
 	public static Connection getSQLiteConn1() throws ClassNotFoundException, SQLException{
 		Class.forName("org.sqlite.JDBC");
 		Connection conn = DriverManager.getConnection("jdbc:sqlite://c:/properties/dbother.db");
+		return conn;
+	}
+	//获取时间表的时间
+	public static Connection getSQLiteForTime() throws ClassNotFoundException, SQLException{
+		Class.forName("org.sqlite.JDBC");
+		Connection conn = DriverManager.getConnection("jdbc:sqlite://c:/properties/dbManager.db");
 		return conn;
 	}
 	public static void close(ResultSet rs,PreparedStatement sta,Connection connection){

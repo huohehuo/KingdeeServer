@@ -34,6 +34,7 @@ public class PushDownloadList extends HttpServlet {
         ArrayList<PushDownDLBean.DLbean> container = new ArrayList<>();
         ArrayList<PushDownRKBean.Rkbean> containerRk = new ArrayList<>();
         String json = request.getParameter("json");
+        String version = request.getParameter("version");
         DownLoadSubListBean dBean = new Gson().fromJson(json, DownLoadSubListBean.class);
         String SQL = "";
         System.out.println("获得数据:" + json);
@@ -91,13 +92,17 @@ public class PushDownloadList extends HttpServlet {
                         "t2.FCancellation = 0)) and t1.FInterID=" + dBean.interID;
                         break;
             case 9:
-                SQL =   "select t11.FName as FStoctName,t12.FName as FSPName,FInterID,FBillNo,FWorkShop,t2.FName as " +
-                        "FDepartmentName,t1.FItemID,t1.FUnitID,FPlanCommitDate,FPlanFinishDate,(FAuxQty-FAuxCommitQty) " +
-                        "as FAuxQty,(FAuxQtyForItem+FAuxQtyScrap) as FAux,'0' as FQtying,'0' as FAuxPrice,t3.FName," +
-                        "t3.FModel,0 as FEntryID,t3.FNumber from ICMO t1 left join t_Department t2 on t1.FWorkShop = " +
-                        "t2.FItemID left join t_ICItem t3 on t1.FItemID=t3.FItemID left join t_Stock t11 on t11.FItemID = " +
-                        "t3.FDefaultLoc left join t_StockPlace t12 on t3.FSPID = t12.FSPID where  FAuxQty-FAuxCommitQty>0 " +
-                        "and FStatus in(1,2) and t1.FInterID=" + dBean.interID;
+                if (version.startsWith("3003")){
+                    SQL =   "select t11.FName as FStoctName,t12.FName as FSPName,FInterID,FBillNo,t1.FDeptID FWorkShop,t2.FName as FDepartmentName,t1.FItemID,t1.FUnitID,FDate FPlanCommitDate,FPlanFinishDate,(FAuxQty-FAuxFinishQty)   as FAuxQty,(FAuxFinishQty) as FAux,'0' as FQtying,'0' as FAuxPrice,t3.FName, t3.FModel,0 as FEntryID,t3.FNumber from ICMO t1 left join t_Department t2 on t1.FDeptID =t2.FItemID left join t_ICItem t3 on t1.FItemID=t3.FItemID left join t_Stock t11 on t11.FItemID =t3.FDefaultLoc left join t_StockPlace t12 on t3.FSPID = t12.FSPID where  FAuxQty-FAuxFinishQty>0 and FStatus in(1,2) and t1.FInterID=" + dBean.interID;
+                }else{
+                    SQL =   "select t11.FName as FStoctName,t12.FName as FSPName,FInterID,FBillNo,FWorkShop,t2.FName as " +
+                            "FDepartmentName,t1.FItemID,t1.FUnitID,FPlanCommitDate,FPlanFinishDate,(FAuxQty-FAuxCommitQty) " +
+                            "as FAuxQty,(FAuxQtyForItem+FAuxQtyScrap) as FAux,'0' as FQtying,'0' as FAuxPrice,t3.FName," +
+                            "t3.FModel,0 as FEntryID,t3.FNumber from ICMO t1 left join t_Department t2 on t1.FWorkShop = " +
+                            "t2.FItemID left join t_ICItem t3 on t1.FItemID=t3.FItemID left join t_Stock t11 on t11.FItemID = " +
+                            "t3.FDefaultLoc left join t_StockPlace t12 on t3.FSPID = t12.FSPID where  FAuxQty-FAuxCommitQty>0 " +
+                            "and FStatus in(1,2) and t1.FInterID=" + dBean.interID;
+                }
                          break;
             case 10:
                 SQL =   "select t11.FName as FStoctName,t12.FName as FSPName,t3.FName,t3.FNumber,t3.FModel,t2.FBillNo," +

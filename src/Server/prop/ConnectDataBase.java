@@ -49,13 +49,14 @@ public class ConnectDataBase extends HttpServlet {
 			try{
 				sBean = gson.fromJson(request.getParameter("json"), ConnectSQLBean.class);
 			}catch(Exception e){
-				response.getWriter().write("服务器解析失败");
+				response.getWriter().write(CommonJson.getCommonJson(false,"服务器解析失败"));
 			}
 			
 			try {
 				System.out.println("1");
 				conn  = JDBCUtil.getConn(getDataBaseUrl.getUrl(sBean.ip, sBean.port, sBean.database), sBean.password, sBean.username);
 				sta = conn.prepareStatement(SQLInfo.GETDATABASE);
+				Lg.e("连接："+SQLInfo.GETDATABASE);
 				rs = sta.executeQuery();
 				ConnectResponseBean connectResponseBean = new ConnectResponseBean();
 				while(rs.next()){

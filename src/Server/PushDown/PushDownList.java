@@ -36,6 +36,7 @@ public class PushDownList extends HttpServlet {
         String condition = "";
         try {
             String json = request.getParameter("json");
+            String version = request.getParameter("version");
             System.out.println("获得json："+json);
             PushDownListRequestBean pushDownListRequestBean = gson.fromJson(json, PushDownListRequestBean.class);
             if (pushDownListRequestBean.FWLUnitID != null && !pushDownListRequestBean.FWLUnitID.equals("")) {
@@ -116,12 +117,17 @@ public class PushDownList extends HttpServlet {
                             "t1.FCancellation = 0))" + condition + "order by t1.FBillNo desc";
                     break;
                 case 9://生产单下推产品入库
-                    SQL = "select '' AS FMangerID,'' AS FEmpID,'' AS FSupplyID,'' AS FDeptID,'' as FDate," +
-                            "FInterID,FBillNo,FWorkShop,t2.FName,FPlanCommitDate," +
-                            "row_number() over (order by t1.FBillNo desc) as row_num from ICMO t1 " +
-                            "left join t_Department t2 on t1.FWorkShop = t2.FItemID left join t_ICItem " +
-                            "t3 on t1.FItemID=t3.FItemID where  FAuxQty-FAuxCommitQty>0 and FStatus " +
-                            "in(1,2) " + condition + " and t3.FProChkMde IN (352)";
+                    if (version.startsWith("3003")){
+                        SQL = "select '' AS FMangerID,'' AS FEmpID,'' AS FSupplyID,FDeptID AS FDeptID, FDate,FInterID,FBillNo,FDeptID FWorkShop,t2.FName,FDate as  FPlanCommitDate,row_number() over (order by t1.FBillNo desc) as row_num from ICMO t1 left join t_Department t2 on t1.FDeptID = t2.FItemID left join t_ICItem t3 on t1.FItemID=t3.FItemID where  FAuxQty-FAuxFinishQty>0 and FStatus in(1,2) " + condition;
+                    }else{
+                        SQL = "select '' AS FMangerID,'' AS FEmpID,'' AS FSupplyID,'' AS FDeptID,'' as FDate," +
+                                "FInterID,FBillNo,FWorkShop,t2.FName,FPlanCommitDate," +
+                                "row_number() over (order by t1.FBillNo desc) as row_num from ICMO t1 " +
+                                "left join t_Department t2 on t1.FWorkShop = t2.FItemID left join t_ICItem " +
+                                "t3 on t1.FItemID=t3.FItemID where  FAuxQty-FAuxCommitQty>0 and FStatus " +
+                                "in(1,2) " + condition + " and t3.FProChkMde IN (352)";
+                    }
+
                     break;
                 case 10://生产汇报单
                     SQL = "select distinct  t1.FBillNo,t2.FName,t1.FDate,t1.FWorkShop as FSupplyID ,t1.FWorkShop " +

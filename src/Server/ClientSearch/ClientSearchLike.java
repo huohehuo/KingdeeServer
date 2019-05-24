@@ -50,7 +50,7 @@ public class ClientSearchLike extends HttpServlet {
                 }
                 else
                 {
-                    SQL = "SELECT  t1.FItemID ,FItemClassID,t1.FNumber,t1.FParentID,FLevel,FDetail,t1.FName,FAddress,FPhone,FEmail,x2.FTypeID  FROM t_Item t1  with(index (uk_Item2)) LEFT JOIN t_Organization x2 ON t1.FItemID = x2.FItemID  WHERE FItemClassID = 1 AND (t1.FDetail = 1) AND t1.FDeleteD=0  ORDER BY t1.FNumber";
+                    SQL = "SELECT  t1.FItemID ,FItemClassID,t1.FNumber,t1.FParentID,FLevel,FDetail,t1.FName,FAddress,FPhone,FEmail,x2.FTypeID  FROM t_Item t1  with(index (uk_Item2)) LEFT JOIN t_Organization x2 ON t1.FItemID = x2.FItemID  WHERE FItemClassID = 1 AND (t1.FDetail = 1) AND t1.FDeleteD=0 and (t1.FNumber like '%"+parameter+"%' or t1.FName like '%"+parameter+"%') ORDER BY t1.FNumber";
                 }
                 sta = conn.prepareStatement(SQL);
                 System.out.println("SQL:"+SQL);

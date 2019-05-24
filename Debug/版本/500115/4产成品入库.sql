@@ -174,7 +174,8 @@ declare @FEntryID varchar(20),       --Ã÷Ï¸ÐòºÅ
  INSERT INTO ICStockBillEntry (FInterID,FEntryID,FBrNo,FItemID,FAuxPropID,FBatchNo,FQtyMust,FQty,FUnitID,FAuxQtyMust,Fauxqty,FSecCoefficient,FSecQty,FAuxPlanPrice,
  FPlanAmount,Fauxprice,Famount,Fnote,FKFDate,FKFPeriod,FPeriodDate,FDCStockID,FDCSPID,FSNListID,FSourceBillNo,FSourceTranType,FSourceInterId,FSourceEntryID,
  FICMOBillNo,FICMOInterID,FPPBomEntryID,FPlanMode,FMTONo,FPrice) 
- VALUES (@FInterID,@FEntryID,'0',@FItemID,0,@FBatchNo,0,@FQty,@FUnitID,0,@Fauxqty,@FSecCoefficient,@FSecQty,@FAuxPlanPrice,@FPlanAmount,@Fauxprice,@Famount,'',Null,0,Null,@FDCStockID,@FDCSPID,0,'',0,0,0,'',0,0,14036,'',@Fauxprice)   
+ VALUES (@FInterID,@FEntryID,'0',@FItemID,0,@FBatchNo,0,@FQty,@FUnitID,0,@Fauxqty,@FSecCoefficient,@FSecQty,@FAuxPlanPrice,@FPlanAmount,@Fauxprice,
+ @Famount,'',Null,0,Null,@FDCStockID,@FDCSPID,0,'',0,0,0,'',0,0,14036,'',@Fauxprice)   
 end
 set @detailqty=@detailqty+1
 end

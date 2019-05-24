@@ -17,7 +17,6 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 /**
- * Servlet implementation class PurchaseInStoreUpload
  */
 @WebServlet("/PushDownOCOSUpload")
 public class PushDownOCOSUpload extends HttpServlet {

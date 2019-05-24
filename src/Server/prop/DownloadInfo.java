@@ -5,6 +5,7 @@ import Bean.DownloadReturnBean;
 import Bean.DownloadReturnBean.*;
 import Utils.CommonJson;
 import Utils.JDBCUtil;
+import Utils.Lg;
 import Utils.getDataBaseUrl;
 import com.google.gson.Gson;
 
@@ -69,11 +70,13 @@ public class DownloadInfo extends HttpServlet {
         DownloadReturnBean dBean = new DownloadReturnBean();
 
         if (request.getParameter("json") != null && !(request.getParameter("json")).equals("")) {
+//            System.out.println(request.getParameter("json"));
+            Lg.e("download:json:",request.getParameter("json"));
             ConnectSQLBean sqlBean = gson.fromJson(request.getParameter("json"), ConnectSQLBean.class);
-            System.out.println(request.getParameter("json"));
             ArrayList<Integer> choose = sqlBean.choose;
             version = sqlBean.Version;
             try {
+
                 connection = JDBCUtil.getConn(getDataBaseUrl.getUrl(sqlBean.ip, sqlBean.port, sqlBean.database), sqlBean.password, sqlBean.username);
                 statement = connection.createStatement();
                 System.out.println(request.getParameter("json"));
@@ -199,6 +202,7 @@ public class DownloadInfo extends HttpServlet {
                     }
                 }
                 dBean.size = size;
+                CommonJson.writeToSDcard("AllData",gson.toJson(dBean));
                 response.getWriter().write(CommonJson.getCommonJson(true, gson.toJson(dBean)));
 
 
@@ -268,7 +272,6 @@ public class DownloadInfo extends HttpServlet {
         }
         return container;
     }
-
     private ArrayList<InStorageType> getInStoreType(Statement statement, ResultSet rSet, String version, DownloadReturnBean dBean) {
         ArrayList<InStorageType> container = new ArrayList<>();
         String sql = "select FID,FName from ICBillType where FID in ('1','2')";
@@ -385,7 +388,7 @@ public class DownloadInfo extends HttpServlet {
         String sql = "select FUserID,FName,'' as FPassWord,FEmpID,FPrimaryGroup as " +
                 "FGroupName,'' as FPermit from t_User where abs(FUserID) between " +
                 "16384 and 2147483647 Order By FUserID";
-//        String sql = "select t1.FUserID,t1.FName,t2.FPassWord,FEmpID,FPrimaryGroup as " +
+//        String sql = "select t1.FUserID,t1.FName,isnull(t2.FPassWord,'') as FPassWord,FEmpID,FPrimaryGroup as " +
 //                "FGroupName,'' as FPermit from t_User t1 left join  t_UserPermitPC t2 on " +
 //                "t1.FUserID=t2.FUserID where abs(t1.FUserID) between 16384 and 2147483647 " +
 //                "and t2.FRemark in('一般权限','管理员权限','保管员权限') or t1.FName " +

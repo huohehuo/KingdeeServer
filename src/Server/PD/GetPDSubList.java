@@ -38,16 +38,29 @@ public class GetPDSubList extends HttpServlet {
             System.out.println(request.getParameter("sqlip")+" "+request.getParameter("sqlport")+" "+request.getParameter("sqlname")+" "+request.getParameter("sqlpass")+" "+request.getParameter("sqluser"));
             conn = JDBCUtil.getConn(getDataBaseUrl.getUrl(request.getParameter("sqlip"), request.getParameter("sqlport"), request.getParameter("sqlname")), request.getParameter("sqlpass"), request.getParameter("sqluser"));
             String json = request.getParameter("json");
+            String version = request.getParameter("version");
             System.out.println(json);
             PDSubRequestBean pBean = gson.fromJson(json,PDSubRequestBean.class);
             if(pBean!=null&&pBean.Fid.size()>0){
                 for(int i = 0; i<pBean.Fid.size();i++){
                     if(pBean.isClear){
-                        sta = conn.prepareStatement("Update ICInvBackup Set FCheckQty=0,FQtyAct=0,FAuxCheckQty=0,FAuxQtyAct=0,FChecker=0,FNote='',FAdjQty=0,FSecQty=0,FSecQtyAct=0,FSecCheckQty=0,FSecAdjQty=0 Where FInterID = ?");
+                        String sql ="";
+                        if (version.startsWith("3003")){
+                            sql="Update ICInvBackup Set FCheckQty=0,FQtyAct=0,FAuxCheckQty=0,FAuxQtyAct=0,FChecker=0,FNote='',FAdjQty=0,FSecQty=0 Where FInterID = ?";
+                        }else{
+                            sql="Update ICInvBackup Set FCheckQty=0,FQtyAct=0,FAuxCheckQty=0,FAuxQtyAct=0,FChecker=0,FNote='',FAdjQty=0,FSecQty=0,FSecQtyAct=0,FSecCheckQty=0,FSecAdjQty=0 Where FInterID = ?";
+                        }
+                        sta = conn.prepareStatement(sql);
                         sta.setString(1,pBean.Fid.get(i));
                         int j = sta.executeUpdate();
                         System.out.println("清零:"+j);
-                        sta = conn.prepareStatement("Update ICInvBackup Set FMinus=FQtyAct-FQty-(FAdjQty*1),FSecMinus=FSecQtyAct-FSecQty-FSecAdjQty Where FInterID = ?");
+                        String sql2 ="";
+                        if (version.startsWith("3003")){
+                            sql2="Update ICInvBackup Set FMinus=FQtyAct-FQty-(FAdjQty*1) Where FInterID = ?";
+                        }else{
+                            sql2="Update ICInvBackup Set FMinus=FQtyAct-FQty-(FAdjQty*1),FSecMinus=FSecQtyAct-FSecQty-FSecAdjQty Where FInterID = ?";
+                        }
+                        sta = conn.prepareStatement(sql2);
                         sta.setString(1,pBean.Fid.get(i));
                         int s = sta.executeUpdate();
                         System.out.println("清零:"+s);

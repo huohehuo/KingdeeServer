@@ -265,7 +265,9 @@ declare @FEntryID varchar(20),       --Ã÷Ï¸ÐòºÅ
 			update ICInventory set FQty=FQty+@FQty where FStockID=@FDCStockID and FStockPlaceID=@FDCSPID and FBatchNo=@FBatchNo and FItemID=@FItemID 
 		  end    
 		end
-INSERT INTO ICStockBillEntry (FInterID,FEntryID,FBrNo,FItemID,FDCStockID,FAuxPropID,FBatchNo,FQtyMust,FQty,FUnitID,FAuxQtyMust,Fauxqty,Fauxprice,Famount,FSecCoefficient,Fnote,FSecQty,FKFDate,FKFPeriod,FAuxPlanPrice,FPlanAmount,FPeriodDate,FSourceBillNo,FSourceTranType,FSourceInterId,FSourceEntryID,FDCSPID,FSNListID,FCustItemNo,FCustItemName,FMOBillNo,FMOInterID,FPPBomEntryID,FOrderBillNo,FOrderEntryID,FOrderInterID) VALUES (@FInterID,@FEntryID,'0',@FItemID,@FDCStockID,0,@FBatchNo,0,@FQty,@FUnitID,0,@Fauxqty,@Fauxprice,@Famount,0,'',0,Null,0,@FAuxPlanPrice,@FPlanAmount,Null,'',0,0,0,0,0,'','','',0,0,'',0,0) 
+INSERT INTO ICStockBillEntry (FInterID,FEntryID,FBrNo,FItemID,FDCStockID,FAuxPropID,FBatchNo,FQtyMust,FQty,FUnitID,FAuxQtyMust,Fauxqty,Fauxprice,Famount,FSecCoefficient,Fnote,FSecQty,FKFDate,FKFPeriod,FAuxPlanPrice,FPlanAmount,FPeriodDate,FSourceBillNo,FSourceTranType,FSourceInterId,FSourceEntryID,FDCSPID,
+FSNListID,FCustItemNo,FCustItemName,FMOBillNo,FMOInterID,FPPBomEntryID,FOrderBillNo,FOrderEntryID,FOrderInterID) 
+VALUES (@FInterID,@FEntryID,'0',@FItemID,@FDCStockID,0,@FBatchNo,0,@FQty,@FUnitID,0,@Fauxqty,@Fauxprice,@Famount,0,'',0,Null,0,@FAuxPlanPrice,@FPlanAmount,Null,'',0,0,0,@FDCSPID,0,'','','',0,0,'',0,0) 
 end
 set @detailqty=@detailqty+1
 end

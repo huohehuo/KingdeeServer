@@ -50,7 +50,7 @@ public class JhSearchLike extends HttpServlet {
                 }
                 else
                 {
-                    SQL = "SELECT  TOP 50 t1.FItemID ,t1.FDeleted ,t1.FNumber,t1.FName,t1.FDetail FROM t_Item t1  with(index (uk_Item2)) LEFT JOIN t_Department x2 ON t1.FItemID = x2.FItemID  WHERE FItemClassID = 2 AND t1.FDetail=1  AND t1.FDeleteD=0  ORDER BY t1.FNumber";
+                    SQL = "SELECT  TOP 50 t1.FItemID ,t1.FDeleted ,t1.FNumber,t1.FName,t1.FDetail FROM t_Item t1  with(index (uk_Item2)) LEFT JOIN t_Department x2 ON t1.FItemID = x2.FItemID  WHERE FItemClassID = 2 AND t1.FDetail=1  AND t1.FDeleteD=0  and (t1.FNumber like '%"+parameter+"%' or t1.FName like '%"+parameter+"%') ORDER BY t1.FNumber";
                 }
                 sta = conn.prepareStatement(SQL);
                 System.out.println("SQL:"+SQL);

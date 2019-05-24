@@ -1,10 +1,8 @@
 package Server.ProductSearch;
 
 import Bean.DownloadReturnBean;
-import Bean.ProductReturnBean;
 import Utils.CommonJson;
 import Utils.JDBCUtil;
-import Utils.getDataBaseUrl;
 import com.google.gson.Gson;
 
 import javax.servlet.ServletException;
@@ -37,8 +35,7 @@ public class SearchProducts extends HttpServlet {
         System.out.println("SearchProducts---json:"+parameter);
         if (parameter != null && !parameter.equals("")) {
             try {
-                System.out.println(request.getParameter("sqlip") + " " + request.getParameter("sqlport") + " " + request.getParameter("sqlname") + " " + request.getParameter("sqlpass") + " " + request.getParameter("sqluser"));
-                conn = JDBCUtil.getConn(getDataBaseUrl.getUrl(request.getParameter("sqlip"), request.getParameter("sqlport"), request.getParameter("sqlname")), request.getParameter("sqlpass"), request.getParameter("sqluser"));
+                conn = JDBCUtil.getConn(request);
                 if (version.contains("5001") && !version.equals("500116") && !version.equals("500115") ) {
                     SQL = "select t1.FBarcode,0 as FINNUM,t2.FIsSnManage,t2.FName,t1.FTypeID,t1.FItemID,t2.FISKFPeriod,convert(INT,t2.FKFPeriod) as FKFPeriod,t1.FItemID,t1.FBarCode,t2.FNumber,t1.FUnitID,t2.FModel,t2.FUnitGroupID,t2.FDefaultLoc,t2.FBatchManager ,isnull(t2.FSalePrice,0) as FSalePrice,t2.FSPID from t_Barcode t1 left join t_ICItem t2 on t1.FItemID=t2.FItemID  where t1.FBarcode ='" + parameter+"'";//旗舰版
                 } else {

@@ -1,10 +1,8 @@
 package Server.ProductSearch;
 
 import Bean.DownloadReturnBean;
-import Bean.ProductReturnBean;
 import Utils.CommonJson;
 import Utils.JDBCUtil;
-import Utils.getDataBaseUrl;
 import com.google.gson.Gson;
 
 import javax.servlet.ServletException;
@@ -37,8 +35,7 @@ public class ProductSearchLike extends HttpServlet {
         System.out.println(parameter);
         if (parameter != null) {
             try {
-                System.out.println(request.getParameter("sqlip") + " " + request.getParameter("sqlport") + " " + request.getParameter("sqlname") + " " + request.getParameter("sqlpass") + " " + request.getParameter("sqluser"));
-                conn = JDBCUtil.getConn(getDataBaseUrl.getUrl(request.getParameter("sqlip"), request.getParameter("sqlport"), request.getParameter("sqlname")), request.getParameter("sqlpass"), request.getParameter("sqluser"));
+                conn = JDBCUtil.getConn(request);
                 if (version.equals("500116")  || version.equals("500115"))
                 {
                     SQL = "select top 50 FSecCoefficient,FSecUnitID,FIsSnManage,FItemID,FISKFPeriod,convert(INT,FKFPeriod) as FKFPeriod,FNumber,FModel,FName,FFullName,FUnitID,FUnitGroupID,FDefaultLoc,isnull(FProfitRate,0) as FProfitRate,isnull(FTaxRate,1) as FTaxRate,isnull(FOrderPrice,0) as FOrderPrice,isnull(FSalePrice,0) as FSalePrice,isnull(FPlanPrice,0) as FPlanPrice,'' as FBarcode,FSPID,FBatchManager from t_ICItem where FErpClsID not in (6,8) and FDeleted = 0 and (FNumber like '%"+parameter+"%' or FName like '%"+parameter+"%') order by FNumber";//k3 rise 12.3
