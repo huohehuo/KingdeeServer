@@ -289,28 +289,7 @@ WHERE t.FInterID IN(@FSourceInterId)
 
 update t1 set FcmtQty_O=FcmtQty_O from ExpOutReqEntry t1  inner join (  select sum(t1.FQty) FQty,t3.fdetailid  from ICStockBillEntry t1  inner join ExpOutReqEntry t2 on t2.fdetailid=t1.fsourceEntryid  inner join ExpOutReqEntry t3 on t3.fdetailid=t2.fentryid_src  where fsourceinterid>0 and fsourcebillno<>'' and fsourcetrantype=1007131 and t1.finterid=@FInterID group by t3.fdetailid) t2  on t1.fdetailid=t2.fdetailid
 
-   if exists( 
-   select 1 from ICStockBillEntry enty 
-   inner join ICStockBill bill on enty.FinterID=bill.FinterID
-   inner join t_PDASNTemp  temp on temp.FBillNo=bill.FBillNo and enty.FEntryID=temp.FEntryID
-   where enty.FinterID=@FInterID  )
-   begin
-   Update enty
-   Set enty.FPDASn = temp.FPDASn
-   from ICStockBillEntry enty
-   inner join ICStockBill bill
-   on enty.FinterID=bill.FinterID
-   inner join t_PDASNTemp  temp
-   on temp.FBillNo=bill.FBillNo and enty.FEntryID=temp.FEntryID
-   Where enty.FinterID = @FInterID  and len(temp.FPDASn)>0  and  temp.FPDASn is not null  
-   End
-   Delete temp
-   from ICStockBillEntry enty
-   inner join ICStockBill bill
-   on enty.FinterID=bill.FinterID
-   inner join t_PDASNTemp  temp
-   on temp.FBillNo=bill.FBillNo and enty.FEntryID=temp.FEntryID
-   Where enty.FinterID = @FInterID   
+    
 Update t1
 Set t1.FSendDate = t3.FDate
 FROM    dbo.IC_Web2ERPOrders t1

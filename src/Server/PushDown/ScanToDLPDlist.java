@@ -1,8 +1,6 @@
 package Server.PushDown;
 
-import Bean.PushDownDLBean;
 import Bean.PushDownListRequestBean;
-import Bean.PushDownListReturnBean;
 import Bean.ScanPDReturnBean;
 import Utils.CommonJson;
 import Utils.JDBCUtil;
@@ -34,6 +32,7 @@ public class ScanToDLPDlist extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
         PrintWriter writer = response.getWriter();
         String json = request.getParameter("json");
+        String version = request.getParameter("version");
         String condition = "";
         String SQL = "";
         if (json != null && !json.equals("")) {
@@ -96,13 +95,17 @@ public class ScanToDLPDlist extends HttpServlet {
                         SQL = "select top 50 * from (select distinct  t1.FBillNo,t2.FName,t1.FDate,FSupplyID ,'' FDeptID,'' FEmpID,FMangerID,t1.FInterID from ICSubContract t1 left join t_Supplier t2 on t1.FSupplyID=t2.FItemID left join PPBOMEntry t3 on t1.FInterID=t3.FICMOInterID where t3.FAuxQtyMust+FAuxQtySupply-t3.FAuxQty>0 and (t1.FStatus=1 or t1.FStatus=2) and FCancellation=0  ) t where 1=1  " + condition + " order by t.FBillNo desc";
                         break;
                     case 13://生产任务单下推生产领料
-                        SQL = "select top 50 * from (select distinct(t4.FICMOInterID),t1.FInterID,t1.FBillNo," +
-                                "t5.FWorkSHop,'' as FMangerID,'' as FEmpID,'' as FSupplyID,'' as FDeptID," +
-                                "t2.FName as FName,t1.FItemID,t1.FUnitID,FPlanCommitDate as FDate  from ICMO " +
-                                "t1 left join t_Department t2 on t1.FWorkShop = t2.FItemID  left join PPBOMEntry " +
-                                "t4 on t1.FInterID=t4.FICMOInterID left join PPBOM t5 on t4.FInterID=t5.FInterID " +
-                                "where t1.FStatus in(1,2) and t4.FAuxQtyMust+t4.FAuxQtySupply-t4.FAuxQty>0 and " +
-                                "t5.FType<>1067) t  where 1=1  " + condition + " order by t.FBillNo desc";
+                        if (version.startsWith("300")) {
+                            SQL = "select top 50 * from (select distinct(t4.FInterID) as  FICMOInterID,t1.FInterID,t1.FBillNo,t1.FDeptID as  FWorkSHop,'' as FMangerID,'' as FEmpID,'' as FSupplyID,FDeptID as FDeptID,t2.FName as FName,t1.FItemID,t1.FUnitID,t1.FDate from ICMO t1 left join t_Department t2 on t1.FDeptID = t2.FItemID left join ICMOEntry t4 on t1.FInterID=t4.FInterID left join t_ICItem t3 on t4.FItemID=t3.FItemID  where t1.FStatus in(1,2) and t4.FAuxPlanQty-t4.FDiscountQty>0) t  where 1=1  " + condition + " order by t.FBillNo desc";
+                        }else{
+                            SQL = "select top 50 * from (select distinct(t4.FICMOInterID),t1.FInterID,t1.FBillNo," +
+                                    "t5.FWorkSHop,'' as FMangerID,'' as FEmpID,'' as FSupplyID,'' as FDeptID," +
+                                    "t2.FName as FName,t1.FItemID,t1.FUnitID,FPlanCommitDate as FDate  from ICMO " +
+                                    "t1 left join t_Department t2 on t1.FWorkShop = t2.FItemID  left join PPBOMEntry " +
+                                    "t4 on t1.FInterID=t4.FICMOInterID left join PPBOM t5 on t4.FInterID=t5.FInterID " +
+                                    "where t1.FStatus in(1,2) and t4.FAuxQtyMust+t4.FAuxQtySupply-t4.FAuxQty>0 and " +
+                                    "t5.FType<>1067) t  where 1=1  " + condition + " order by t.FBillNo desc";
+                        }
                         break;
                     case 14://采购订单下推收料通知单
                         SQL = "select * from(select distinct(t1.FBillNo),t2.FName,t1.FDate,FCustID as FSupplyID ," +
@@ -228,14 +231,21 @@ public class ScanToDLPDlist extends HttpServlet {
                                     "and t1.FAuxQtyMust-t1.FAuxQty>0 and t2.FInterID=" +pushDownListBean.FInterID;
                             break;
                         case 13:
-                            SQL =   "select '' as FAuxPrice, '0' as FQtying,  t11.FName as FStoctName,t12.FName as FSPName,t4.FItemID,(t4.FAuxQtyMust+t4.FAuxQtySupply-t4.FAuxQty) " +
-                                    "as FAuxQty,t4.FICMOInterID,t1.FInterID,t1.FBillNo,t5.FWorkSHop,t2.FName as FDepartmentName,t4.FItemID," +
-                                    "t4.FUnitID,FPlanCommitDate,FPlanFinishDate,t3.FName,t3.FModel,t4.FEntryID,t3.FNumber  from ICMO t1 " +
-                                    "left join t_Department t2 on t1.FWorkShop = t2.FItemID " +
-                                    "left join PPBOMEntry t4 on t1.FInterID=t4.FICMOInterID  left join t_ICItem t3 on t4.FItemID=t3.FItemID " +
-                                    "left join PPBOM t5 on t4.FInterID=t5.FInterID left join t_Stock t11 on t11.FItemID = t3.FDefaultLoc " +
-                                    "left join t_StockPlace t12 on t3.FSPID = t12.FSPID where t1.FStatus in(1,2) and " +
-                                    "t4.FAuxQtyMust+t4.FAuxQtySupply-t4.FAuxQty>0 and t5.FType<>1067 and t1.FInterID = " + pushDownListBean.FInterID;
+                            if (version.startsWith("300")) {
+                                SQL =   "select '0' as FAuxPrice, '0' as FQtying,  t11.FName as FStoctName,t12.FName as FSPName,t4.FItemID,(t4.FAuxPlanQty-t4.FDiscountQty)  as FAuxQty,t4.FInterID,t1.FInterID,t1.FBillNo,t5.FDeptID FWorkSHop,t2.FName as FDepartmentName,t4.FItemID,t4.FUnitID,t1.FDate as FPlanCommitDate,t1.FDate as FPlanFinishDate,t3.FName,t3.FModel,t4.FEntryID,t3.FNumber  from ICMO  t1 left join t_Department t2 on t1.FDeptID = t2.FItemID left join ICMOEntry t4 on t1.FInterID=t4.FInterID  left join t_ICItem t3 on t4.FItemID=t3.FItemID " +
+                                        " left join ICMO t5 on t4.FInterID=t5.FInterID left join t_Stock t11 on t11.FItemID = t3.FDefaultLoc " +
+                                        " left join t_StockPlace t12 on t3.FSPID = t12.FSPID where  t1.FStatus in(1,2) and t4.FAuxPlanQty-t4.FDiscountQty>0 and t1.FInterID = " +  pushDownListBean.FInterID;
+                            }else{
+                                SQL =   "select '' as FAuxPrice, '0' as FQtying,  t11.FName as FStoctName,t12.FName as FSPName,t4.FItemID,(t4.FAuxQtyMust+t4.FAuxQtySupply-t4.FAuxQty) " +
+                                        "as FAuxQty,t4.FICMOInterID,t1.FInterID,t1.FBillNo,t5.FWorkSHop,t2.FName as FDepartmentName,t4.FItemID," +
+                                        "t4.FUnitID,FPlanCommitDate,FPlanFinishDate,t3.FName,t3.FModel,t4.FEntryID,t3.FNumber  from ICMO t1 " +
+                                        "left join t_Department t2 on t1.FWorkShop = t2.FItemID " +
+                                        "left join PPBOMEntry t4 on t1.FInterID=t4.FICMOInterID  left join t_ICItem t3 on t4.FItemID=t3.FItemID " +
+                                        "left join PPBOM t5 on t4.FInterID=t5.FInterID left join t_Stock t11 on t11.FItemID = t3.FDefaultLoc " +
+                                        "left join t_StockPlace t12 on t3.FSPID = t12.FSPID where t1.FStatus in(1,2) and " +
+                                        "t4.FAuxQtyMust+t4.FAuxQtySupply-t4.FAuxQty>0 and t5.FType<>1067 and t1.FInterID = " + pushDownListBean.FInterID;
+                            }
+
                             break;
                         case 14:
                             SQL =   "select t11.FName as FStoctName,t12.FName as FSPName,t3.FName,t3.FNumber,t3.FModel,t2.FBillNo,t1.FInterID,FEntryID,t1.FItemID,t1.FUnitID," +

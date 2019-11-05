@@ -130,14 +130,21 @@ public class PushDownloadList extends HttpServlet {
                         "and t1.FAuxQtyMust-t1.FAuxQty>0 and t2.FInterID=" + dBean.interID;
                         break;
             case 13:
-                SQL =   "select '' as FAuxPrice, '0' as FQtying,  t11.FName as FStoctName,t12.FName as FSPName,t4.FItemID,(t4.FAuxQtyMust+t4.FAuxQtySupply-t4.FAuxQty) " +
-                        "as FAuxQty,t4.FICMOInterID,t1.FInterID,t1.FBillNo,t5.FWorkSHop,t2.FName as FDepartmentName,t4.FItemID," +
-                        "t4.FUnitID,FPlanCommitDate,FPlanFinishDate,t3.FName,t3.FModel,t4.FEntryID,t3.FNumber  from ICMO t1 " +
-                        "left join t_Department t2 on t1.FWorkShop = t2.FItemID " +
-                        "left join PPBOMEntry t4 on t1.FInterID=t4.FICMOInterID  left join t_ICItem t3 on t4.FItemID=t3.FItemID " +
-                        "left join PPBOM t5 on t4.FInterID=t5.FInterID left join t_Stock t11 on t11.FItemID = t3.FDefaultLoc " +
-                        "left join t_StockPlace t12 on t3.FSPID = t12.FSPID where t1.FStatus in(1,2) and " +
-                        "t4.FAuxQtyMust+t4.FAuxQtySupply-t4.FAuxQty>0 and t5.FType<>1067 and t1.FInterID = " + dBean.interID;
+                if (version.startsWith("300")) {
+                    SQL =   "select '0' as FAuxPrice, '0' as FQtying,  t11.FName as FStoctName,t12.FName as FSPName,t4.FItemID,(t4.FAuxPlanQty-t4.FDiscountQty)  as FAuxQty,t4.FInterID,t1.FInterID,t1.FBillNo,t5.FDeptID FWorkSHop,t2.FName as FDepartmentName,t4.FItemID,t4.FUnitID,t1.FDate as FPlanCommitDate,t1.FDate as FPlanFinishDate,t3.FName,t3.FModel,t4.FEntryID,t3.FNumber  from ICMO  t1 left join t_Department t2 on t1.FDeptID = t2.FItemID left join ICMOEntry t4 on t1.FInterID=t4.FInterID  left join t_ICItem t3 on t4.FItemID=t3.FItemID " +
+                            " left join ICMO t5 on t4.FInterID=t5.FInterID left join t_Stock t11 on t11.FItemID = t3.FDefaultLoc " +
+                            " left join t_StockPlace t12 on t3.FSPID = t12.FSPID where  t1.FStatus in(1,2) and t4.FAuxPlanQty-t4.FDiscountQty>0 and t1.FInterID = " + dBean.interID;
+                }else{
+                    SQL =   "select '' as FAuxPrice, '0' as FQtying,  t11.FName as FStoctName,t12.FName as FSPName,t4.FItemID,(t4.FAuxQtyMust+t4.FAuxQtySupply-t4.FAuxQty) " +
+                            "as FAuxQty,t4.FICMOInterID,t1.FInterID,t1.FBillNo,t5.FWorkSHop,t2.FName as FDepartmentName,t4.FItemID," +
+                            "t4.FUnitID,FPlanCommitDate,FPlanFinishDate,t3.FName,t3.FModel,t4.FEntryID,t3.FNumber  from ICMO t1 " +
+                            "left join t_Department t2 on t1.FWorkShop = t2.FItemID " +
+                            "left join PPBOMEntry t4 on t1.FInterID=t4.FICMOInterID  left join t_ICItem t3 on t4.FItemID=t3.FItemID " +
+                            "left join PPBOM t5 on t4.FInterID=t5.FInterID left join t_Stock t11 on t11.FItemID = t3.FDefaultLoc " +
+                            "left join t_StockPlace t12 on t3.FSPID = t12.FSPID where t1.FStatus in(1,2) and " +
+                            "t4.FAuxQtyMust+t4.FAuxQtySupply-t4.FAuxQty>0 and t5.FType<>1067 and t1.FInterID = " + dBean.interID;
+                }
+
                         break;
             case 14:
                 SQL =   "select t11.FName as FStoctName,t12.FName as FSPName,t3.FName,t3.FNumber,t3.FModel,t2.FBillNo,t1.FInterID,FEntryID,t1.FItemID,t1.FUnitID,convert(float,FAuxQty-FAuxCommitQty) as FAuxQty,convert(float,FAuxPrice) as FAuxPrice,'0' as FQtying " +

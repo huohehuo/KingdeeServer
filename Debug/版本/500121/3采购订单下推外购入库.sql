@@ -292,29 +292,7 @@ Set t.FStatus =Case When (SELECT COUNT(1) FROM POOrderEntry WHERE (FCommitQty>0 
 From POOrder t
 WHERE t.FInterID IN(@FInterID)
 
-   if exists( 
-   select 1 from ICStockBillEntry enty 
-   inner join ICStockBill bill on enty.FinterID=bill.FinterID
-   inner join t_PDASNTemp  temp on temp.FBillNo=bill.FBillNo and enty.FEntryID=temp.FEntryID
-   where enty.FinterID=@FInterID  )
-   begin
-   Update enty
-   Set enty.FPDASn = temp.FPDASn
-   from ICStockBillEntry enty
-   inner join ICStockBill bill
-   on enty.FinterID=bill.FinterID
-   inner join t_PDASNTemp  temp
-   on temp.FBillNo=bill.FBillNo and enty.FEntryID=temp.FEntryID
-   Where enty.FinterID = @FInterID  and len(temp.FPDASn)>0  and  temp.FPDASn is not null  
-   End
-   Delete temp
-   from ICStockBillEntry enty
-   inner join ICStockBill bill
-   on enty.FinterID=bill.FinterID
-   inner join t_PDASNTemp  temp
-   on temp.FBillNo=bill.FBillNo and enty.FEntryID=temp.FEntryID
-   Where enty.FinterID = @FInterID   
-
+   
 
 if not exists(  select   1  from ICStockBillEntry where FInterID=@FInterID)
 begin
