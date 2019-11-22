@@ -22,6 +22,7 @@ public class DownloadReturnBean {
     public ArrayList<wanglaikemu> wanglaikemu;//������Ŀ
     public ArrayList<PriceMethod> priceMethods;//�۸�����
     public ArrayList<InStorageType> inStorageTypes;
+    public ArrayList<NoticBean> noticBeans;
     public int size;
 
     public class InStorageType {

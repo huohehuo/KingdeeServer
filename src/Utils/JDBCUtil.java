@@ -1,5 +1,8 @@
 package Utils;
+
 import javax.servlet.http.HttpServletRequest;
+import java.io.BufferedReader;
+import java.io.IOException;
 import java.sql.*;
 
 public class JDBCUtil {
@@ -64,5 +67,57 @@ public class JDBCUtil {
 			}
 		}
 	}
-	
+
+
+	/*
+	String getbody=null;
+        String parameter= null;
+		Lg.e("到达");
+		try{
+//            getbody = ReadAsChars(request);//获取post请求中的body数据
+//            PostBean postBean = gson.fromJson(getbody, PostBean.class);//解析
+            parameter = postBean.json;//解密数据
+        }catch (Exception e){
+            response.getWriter().write(gson.toJson(new WebResponse(false,"上传失败,请求体解析错误")));
+        }
+
+	* */
+	// 字符串读取post请求中的body数据
+	public static String ReadAsChars(HttpServletRequest request)
+	{
+
+		BufferedReader br = null;
+		StringBuilder sb = new StringBuilder("");
+		try
+		{
+			br = request.getReader();
+			String str;
+			while ((str = br.readLine()) != null)
+			{
+				sb.append(str);
+			}
+			br.close();
+		}
+		catch (IOException e)
+		{
+			e.printStackTrace();
+		}
+		finally
+		{
+			if (null != br)
+			{
+				try
+				{
+					br.close();
+				}
+				catch (IOException e)
+				{
+					e.printStackTrace();
+				}
+			}
+		}
+		return sb.toString();
+	}
+
+
 }
