@@ -36,7 +36,7 @@ public class CGDDPDSLTZDUpload extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setCharacterEncoding("UTF-8");
-		request.setCharacterEncoding("GBK");
+		request.setCharacterEncoding("UTF-8");
 		String parameter = request.getParameter("json");
 		Gson gson = new Gson();
 		Connection conn = null;

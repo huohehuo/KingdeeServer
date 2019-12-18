@@ -1,4 +1,4 @@
-package Server.upload;
+package Server.upload.old;
 
 import Bean.PurchaseInStoreUploadBean;
 import Utils.CommonJson;
@@ -17,16 +17,15 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 /**
- * Servlet implementation class PurchaseInStoreUpload
  */
-@WebServlet("/PushDownSOUpload")
-public class PushDownSOUpload extends HttpServlet {
+@WebServlet("/PurchaseOrderUpload")
+public class PurchaseOrderUpload extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public PushDownSOUpload() {
+    public PurchaseOrderUpload() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -37,7 +36,7 @@ public class PushDownSOUpload extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.setCharacterEncoding("UTF-8");
-		request.setCharacterEncoding("UTF-8");
+		request.setCharacterEncoding("GBK");
 		String parameter = request.getParameter("json");
 		Gson gson = new Gson();
 		Connection conn = null;
@@ -51,7 +50,7 @@ public class PushDownSOUpload extends HttpServlet {
 				
 				PurchaseInStoreUploadBean pBean = gson.fromJson(parameter, PurchaseInStoreUploadBean.class);
 				for(int i =0;i<pBean.list.size();i++){
-					sta = conn.prepareStatement("exec proc_OutCheck ?,?,?,?,?,?");
+					sta = conn.prepareStatement("exec proc_InOrder ?,?,?,?,?,?");
 					String main = pBean.list.get(i).main;
 					sta.setString(1, main);
 					sta.setString(2, "");
@@ -85,5 +84,4 @@ public class PushDownSOUpload extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
-
 }

@@ -1,4 +1,4 @@
-package Server.upload;
+package Server.upload.old;
 
 import Bean.PurchaseInStoreUploadBean;
 import Utils.CommonJson;
@@ -19,14 +19,14 @@ import java.sql.SQLException;
 /**
  * Servlet implementation class PurchaseInStoreUpload
  */
-@WebServlet("/PushDownSOUpload")
-public class PushDownSOUpload extends HttpServlet {
+@WebServlet("/SalesOrderUpload")
+public class SalesOrderStoreUpload extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public PushDownSOUpload() {
+    public SalesOrderStoreUpload() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -46,12 +46,16 @@ public class PushDownSOUpload extends HttpServlet {
 		if(parameter!=null&&!parameter.equals("")){
 			try {
 				System.out.println(parameter);
-				conn = JDBCUtil.getConn(getDataBaseUrl.getUrl(request.getParameter("sqlip"), request.getParameter("sqlport"), request.getParameter("sqlname")), request.getParameter("sqlpass"), request.getParameter("sqluser"));
-				System.out.println(request.getParameter("sqlip")+" "+request.getParameter("sqlport")+" "+request.getParameter("sqlname")+" "+request.getParameter("sqlpass")+" "+request.getParameter("sqluser"));
+				conn = JDBCUtil.getConn(getDataBaseUrl.getUrl(request.getParameter("sqlip")
+						, request.getParameter("sqlport"), request.getParameter("sqlname")),
+						request.getParameter("sqlpass"), request.getParameter("sqluser"));
+				System.out.println(request.getParameter("sqlip")+" "
+						+request.getParameter("sqlport")+" "+request.getParameter("sqlname")
+						+" "+request.getParameter("sqlpass")+" "+request.getParameter("sqluser"));
 				
 				PurchaseInStoreUploadBean pBean = gson.fromJson(parameter, PurchaseInStoreUploadBean.class);
 				for(int i =0;i<pBean.list.size();i++){
-					sta = conn.prepareStatement("exec proc_OutCheck ?,?,?,?,?,?");
+					sta = conn.prepareStatement("exec proc_SaleOrder ?,?,?,?,?,?");
 					String main = pBean.list.get(i).main;
 					sta.setString(1, main);
 					sta.setString(2, "");
@@ -71,7 +75,6 @@ public class PushDownSOUpload extends HttpServlet {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 				response.getWriter().write(CommonJson.getCommonJson(false,"数据库错误\r\n----------------\r\n错误原因:\r\n"+e.toString()));
-
 			}finally {
 				JDBCUtil.close(null,sta,conn);
 			}

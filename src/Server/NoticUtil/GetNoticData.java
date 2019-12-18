@@ -55,6 +55,7 @@ public class GetNoticData extends HttpServlet {
                         cBean.FBillNo					=rs.getString("推送单号");
                         cBean.FActivityType					=rs.getString("单据类型");
                         cBean.FNumAll					=rs.getString("总行数");
+                        cBean.FNoticeId					=rs.getString("noticeid");
                         list.add(cBean);
                     }
                 }

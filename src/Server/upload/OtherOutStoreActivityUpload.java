@@ -17,16 +17,15 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 /**
- * Servlet implementation class PurchaseInStoreUpload
  */
-@WebServlet("/PushDownSOUpload")
-public class PushDownSOUpload extends HttpServlet {
+@WebServlet("/OtherOutStoreActivityUpload")
+public class OtherOutStoreActivityUpload extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public PushDownSOUpload() {
+    public OtherOutStoreActivityUpload() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -51,7 +50,7 @@ public class PushDownSOUpload extends HttpServlet {
 				
 				PurchaseInStoreUploadBean pBean = gson.fromJson(parameter, PurchaseInStoreUploadBean.class);
 				for(int i =0;i<pBean.list.size();i++){
-					sta = conn.prepareStatement("exec proc_OutCheck ?,?,?,?,?,?");
+					sta = conn.prepareStatement("exec proc_OtherOut ?,?,?,?,?,?");
 					String main = pBean.list.get(i).main;
 					sta.setString(1, main);
 					sta.setString(2, "");
@@ -66,6 +65,7 @@ public class PushDownSOUpload extends HttpServlet {
 					System.out.println(execute+"");
 					
 				}
+
 				response.getWriter().write(CommonJson.getCommonJson(true, ""));
 			} catch (ClassNotFoundException | SQLException e) {
 				// TODO Auto-generated catch block

@@ -1,4 +1,4 @@
-package Server.upload;
+package Server.upload.old;
 
 import Bean.PurchaseInStoreUploadBean;
 import Utils.CommonJson;
@@ -17,19 +17,18 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 /**
- * Servlet implementation class PurchaseInStoreUpload
  */
-@WebServlet("/PushDownSOUpload")
-public class PushDownSOUpload extends HttpServlet {
+@WebServlet("/SoldOutUpload")
+public  class SoldOutUpload extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public PushDownSOUpload() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
+	/**
+	 * @see HttpServlet#HttpServlet()
+	 */
+	public SoldOutUpload() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -48,10 +47,10 @@ public class PushDownSOUpload extends HttpServlet {
 				System.out.println(parameter);
 				conn = JDBCUtil.getConn(getDataBaseUrl.getUrl(request.getParameter("sqlip"), request.getParameter("sqlport"), request.getParameter("sqlname")), request.getParameter("sqlpass"), request.getParameter("sqluser"));
 				System.out.println(request.getParameter("sqlip")+" "+request.getParameter("sqlport")+" "+request.getParameter("sqlname")+" "+request.getParameter("sqlpass")+" "+request.getParameter("sqluser"));
-				
+
 				PurchaseInStoreUploadBean pBean = gson.fromJson(parameter, PurchaseInStoreUploadBean.class);
 				for(int i =0;i<pBean.list.size();i++){
-					sta = conn.prepareStatement("exec proc_OutCheck ?,?,?,?,?,?");
+					sta = conn.prepareStatement("exec proc_SaleStore ?,?,?,?,?,?");
 					String main = pBean.list.get(i).main;
 					sta.setString(1, main);
 					sta.setString(2, "");
@@ -64,7 +63,7 @@ public class PushDownSOUpload extends HttpServlet {
 					}
 					execute = sta.execute();
 					System.out.println(execute+"");
-					
+
 				}
 				response.getWriter().write(CommonJson.getCommonJson(true, ""));
 			} catch (ClassNotFoundException | SQLException e) {

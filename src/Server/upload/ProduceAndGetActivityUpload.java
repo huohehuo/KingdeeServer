@@ -19,14 +19,14 @@ import java.sql.SQLException;
 /**
  * Servlet implementation class PurchaseInStoreUpload
  */
-@WebServlet("/PushDownSOUpload")
-public class PushDownSOUpload extends HttpServlet {
+@WebServlet("/ProduceAndGetActivityUpload")
+public class ProduceAndGetActivityUpload extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public PushDownSOUpload() {
+    public ProduceAndGetActivityUpload() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -51,7 +51,7 @@ public class PushDownSOUpload extends HttpServlet {
 				
 				PurchaseInStoreUploadBean pBean = gson.fromJson(parameter, PurchaseInStoreUploadBean.class);
 				for(int i =0;i<pBean.list.size();i++){
-					sta = conn.prepareStatement("exec proc_OutCheck ?,?,?,?,?,?");
+					sta = conn.prepareStatement("exec proc_ProductPicking1 ?,?,?,?,?,?");
 					String main = pBean.list.get(i).main;
 					sta.setString(1, main);
 					sta.setString(2, "");
@@ -62,6 +62,7 @@ public class PushDownSOUpload extends HttpServlet {
 					for(int j = 0;j<pBean.list.get(i).detail.size();j++){
 						sta.setString(j+2, pBean.list.get(i).detail.get(j));
 					}
+					System.out.println("SQL:"+sta.toString());
 					execute = sta.execute();
 					System.out.println(execute+"");
 					
@@ -71,7 +72,6 @@ public class PushDownSOUpload extends HttpServlet {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 				response.getWriter().write(CommonJson.getCommonJson(false,"数据库错误\r\n----------------\r\n错误原因:\r\n"+e.toString()));
-
 			}finally {
 				JDBCUtil.close(null,sta,conn);
 			}

@@ -5,6 +5,7 @@ package Bean;
  * 消息提醒类
  */
 public class NoticBean {
+    public String FNoticeId;
     public String FBillNo;
     public String FNumAll;
     public String FType;
