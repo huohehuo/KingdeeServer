@@ -10,665 +10,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c314ea08-6d77-469a-9858-6948002aef46" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Server/ProductSearch/ManSearchLike.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Server/ProductSearch/StorageSearchLike.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Server/ProductSearch/WaveHouseSearchLike.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Server/upload/OtherInStoreActivityUpload.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Server/upload/OtherOutStoreActivityUpload.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Server/upload/ProduceAndGetActivityUpload.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Server/upload/SaleOrderActivityUpload.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Server/upload/old/ProductInStoreUpload.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Server/upload/old/PurchaseInStoreUpload.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Server/upload/old/PurchaseOrderUpload.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Server/upload/old/SoldOutUpload.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/DBData.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/DBSetFile.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/GetProc.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/GetProc.pdb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/GetProc.vshost.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/ID.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/System.Data.SQLite.DLL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300302/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300302/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300302/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300302/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300302/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300302/3生产任务单生成生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300302/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300302/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300302/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300302/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300302/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300302/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300302/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300302/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300302/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300302/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300302/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300302/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300302/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300303/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300303/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300303/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300303/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300303/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300303/3生产任务单生成生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300303/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300303/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300303/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300303/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300303/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300303/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300303/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300303/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300303/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300303/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300303/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300303/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300303/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300304/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300304/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300304/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300304/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300304/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300304/3生产任务单生成生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300304/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300304/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300304/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300304/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300304/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300304/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300304/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300304/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300304/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300304/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300304/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300304/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300304/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300305/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300305/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300305/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300305/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300305/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300305/3生产任务单生成生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300305/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300305/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300305/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300305/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300305/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300305/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300305/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300305/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300305/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300305/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300305/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300305/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300305/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300306/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300306/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300306/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300306/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300306/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300306/3生产任务单生成生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300306/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300306/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300306/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300306/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300306/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300306/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300306/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300306/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300306/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300306/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300306/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300306/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300306/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300307/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300307/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300307/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300307/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300307/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300307/3生产任务单生成生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300307/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300307/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300307/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300307/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300307/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300307/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300307/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300307/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300307/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300307/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300307/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300307/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300307/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300308/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300308/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300308/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300308/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300308/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300308/3生产任务单生成生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300308/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300308/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300308/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300308/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300308/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300308/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300308/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300308/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300308/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300308/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300308/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300308/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300308/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300309/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300309/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300309/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300309/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300309/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300309/3生产任务单生成生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300309/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300309/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300309/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300309/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300309/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300309/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300309/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300309/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300309/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300309/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300309/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300309/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/300309/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500115/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500115/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500115/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500115/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500115/3发货通知生产销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500115/3收料通知生成外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500115/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500115/3生产任务单生成生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500115/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500115/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500115/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500115/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500115/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500115/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500115/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500115/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500115/6返参存储过程.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500115/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500115/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500115/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500115/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500115/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500116/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500116/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500116/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500116/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500116/3发货通知生产销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500116/3收料通知生成外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500116/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500116/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500116/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500116/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500116/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500116/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500116/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500116/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500116/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500116/6返参存储过程.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500116/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500116/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500116/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500116/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500116/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500118/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500118/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500118/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500118/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500118/3发货通知生成销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500118/3收料通知生成外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500118/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500118/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500118/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500118/3销售订单生成发货通知.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500118/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500118/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500118/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500118/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500118/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500118/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500118/6返参存储过程.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500118/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500118/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500118/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500118/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500118/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500119/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500119/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500119/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500119/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500119/3发货通知生成销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500119/3收料通知生成外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500119/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500119/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500119/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500119/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500119/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500119/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500119/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500119/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500119/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500119/6返参存储过程.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500119/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500119/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500119/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500119/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500119/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500120/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500120/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500120/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500120/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500120/3发货通知生成销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500120/3收料通知生成外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500120/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500120/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500120/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500120/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500120/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500120/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500120/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500120/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500120/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500120/6返参存储过程.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500120/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500120/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500120/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500120/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500120/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500121/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500121/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500121/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500121/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500121/3发货通知生成调拨单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500121/3发货通知生成销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500121/3收料通知生成外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500121/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500121/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500121/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500121/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500121/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500121/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500121/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500121/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500121/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500121/6返参存储过程.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500121/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500121/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500121/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500121/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500121/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500122/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500122/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500122/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500122/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500122/3发货通知生成调拨单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500122/3发货通知生成销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500122/3收料通知生成外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500122/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500122/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500122/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500122/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500122/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500122/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500122/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500122/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500122/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500122/6返参存储过程.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500122/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500122/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500122/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500122/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500122/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500123/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500123/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500123/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500123/2销售出库单验货.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500123/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500123/3发货通知生成调拨单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500123/3发货通知生成销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500123/3收料通知生成外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500123/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500123/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500123/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500123/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500123/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500123/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500123/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500123/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500123/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500123/6返参存储过程.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500123/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500123/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500123/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500123/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500123/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500124/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500124/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500124/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500124/2销售出库单验货.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500124/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500124/3发货通知生成调拨单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500124/3发货通知生成销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500124/3收料通知生成外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500124/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500124/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500124/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500124/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500124/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500124/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500124/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500124/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500124/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500124/6返参存储过程.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500124/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500124/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500124/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500124/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500124/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500126/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500126/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500126/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500126/2销售出库单验货.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500126/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500126/3发货通知生成调拨单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500126/3发货通知生成销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500126/3收料通知生成外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500126/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500126/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500126/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500126/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500126/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500126/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500126/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500126/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500126/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500126/6返参存储过程.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500126/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500126/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500126/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500126/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/500126/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700101/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700101/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700101/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700101/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700101/3发货通知生产销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700101/3收料通知生成外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700101/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700101/3生产任务单生成生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700101/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700101/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700101/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700101/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700101/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700101/4委外入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700101/4委外出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700101/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700101/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700101/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700101/5固定资产盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700101/6返参存储过程.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700101/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700101/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700101/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700101/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700101/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700103/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700103/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700103/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700103/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700103/3发货通知生产销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700103/3收料通知生成外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700103/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700103/3生产任务单生成生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700103/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700103/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700103/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700103/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700103/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700103/4委外入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700103/4委外出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700103/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700103/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700103/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700103/5固定资产盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700103/6返参存储过程.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700103/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700103/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700103/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700103/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700103/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700104/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700104/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700104/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700104/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700104/3发货通知生产销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700104/3收料通知生成外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700104/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700104/3生产任务单生成生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700104/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700104/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700104/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700104/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700104/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700104/4委外入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700104/4委外出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700104/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700104/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700104/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700104/5固定资产盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700104/6返参存储过程.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700104/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700104/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700104/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700104/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700104/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700105/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700105/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700105/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700105/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700105/3发货通知生产销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700105/3收料通知生成外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700105/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700105/3生产任务单生成生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700105/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700105/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700105/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700105/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700105/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700105/4委外入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700105/4委外出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700105/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700105/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700105/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700105/5固定资产盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700105/6返参存储过程.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700105/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700105/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700105/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700105/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/700105/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800101/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800101/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800101/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800101/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800101/3发货通知生产销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800101/3发货通知生成调拨单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800101/3收料通知生成外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800101/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800101/3生产任务单生成生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800101/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800101/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800101/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800101/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800101/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800101/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800101/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800101/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800101/5固定资产盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800101/6返参存储过程.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800101/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800101/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800101/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800101/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800101/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800102/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800102/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800102/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800102/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800102/3发货通知生产销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800102/3收料通知生成外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800102/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800102/3生产任务单生成生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800102/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800102/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800102/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800102/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800102/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800102/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800102/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800102/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800102/5固定资产盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800102/6返参存储过程.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800102/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800102/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800102/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800102/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800102/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800103/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800103/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800103/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800103/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800103/3发货通知生成销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800103/3收料通知生成外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800103/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800103/3生产任务单生成生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800103/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800103/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800103/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800103/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800103/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800103/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800103/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800103/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800103/5固定资产盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800103/6返参存储过程.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800103/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800103/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800103/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800103/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800103/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800105/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800105/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800105/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800105/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800105/3发货通知生成销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800105/3收料通知生成外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800105/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800105/3生产任务单生成生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800105/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800105/3采购订单下推收料通知单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800105/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800105/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800105/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800105/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800105/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800105/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800105/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800105/5固定资产盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800105/6返参存储过程.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800105/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800105/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800105/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800105/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800105/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800106/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800106/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800106/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800106/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800106/3发货通知生成销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800106/3收料通知生成外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800106/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800106/3生产任务单生成生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800106/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800106/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800106/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800106/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800106/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800106/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800106/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800106/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800106/5固定资产盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800106/6返参存储过程.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800106/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800106/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800106/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800106/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800106/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800107/1采购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800107/1采购订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800107/2销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800107/2销售订单.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800107/3发货通知生成销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800107/3收料通知生成外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800107/3生产任务单生成产品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800107/3生产任务单生成生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800107/3采购订单下推外购入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800107/3销售订单下推销售出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800107/4产成品入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800107/4其他入库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800107/4其他出库.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800107/4生产领料.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800107/4盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800107/4调拨.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800107/5固定资产盘点.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800107/6返参存储过程.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800107/分割函数.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800107/商品条码标.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800107/存储保存更改数据.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800107/权限表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/版本/800107/条码表.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/配置文件/DBData.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/配置文件/DBSetFile.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Debug/配置文件/Md5ID.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Bean/NoticBean.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Bean/NoticBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/NoticUtil/GetNoticData.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/NoticUtil/GetNoticData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Bean/NoticBean.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Bean/NoticBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Server/NoticUtil/GetNoticData.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Server/NoticUtil/GetNoticData.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/OtherInStoreUpload.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/OtherOutStoreUpload.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/ProduceAndGetUpload.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/ProductInStoreUpload.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/PurchaseInStoreUpload.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/PurchaseOrderUpload.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/SalesOrderStoreUpload.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/SoldOutUpload.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/OtherInStoreUpload.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/OtherOutStoreUpload.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/ProduceAndGetUpload.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/ProductInStoreUpload.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/PurchaseInStoreUpload.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/PurchaseOrderUpload.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/SalesOrderStoreUpload.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/SoldOutUpload.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/CGDDPDSLTZDUpload.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/CGDDPDSLTZDUpload.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/OSISUpload.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/OSISUpload.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/PushDownDBOCUpload.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/PushDownDBOCUpload.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/PushDownFHDBUpload.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/PushDownFHDBUpload.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/PushDownGGCUpload.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/PushDownGGCUpload.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/PushDownOCISUpload.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/PushDownOCISUpload.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/PushDownOCOSUpload.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/PushDownOCOSUpload.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/PushDownPPISUpload.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/PushDownPPISUpload.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/PushDownSLUpload.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/PushDownSLUpload.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/PushDownSNUpload.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/PushDownSNUpload.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/PushDownSOUpload.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/upload/PushDownSOUpload.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/CGDDPDSLTZDUpload.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/CGDDPDSLTZDUpload.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/OSISUpload.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/OSISUpload.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/PushDownDBOCUpload.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/PushDownDBOCUpload.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/PushDownFHDBUpload.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/PushDownFHDBUpload.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/PushDownGGCUpload.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/PushDownGGCUpload.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/PushDownOCISUpload.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/PushDownOCISUpload.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/PushDownOCOSUpload.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/PushDownOCOSUpload.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/PushDownPPISUpload.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/PushDownPPISUpload.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/PushDownSLUpload.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/PushDownSLUpload.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/PushDownSNUpload.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/PushDownSNUpload.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/PushDownSOUpload.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Server/upload/PushDownSOUpload.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Bean/NoticBean.java" afterPath="$PROJECT_DIR$/src/Bean/NoticBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Server/NoticUtil/GetNoticData.java" afterPath="$PROJECT_DIR$/src/Server/NoticUtil/GetNoticData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Server/upload/CGDDPDSLTZDUpload.java" afterPath="$PROJECT_DIR$/src/Server/upload/CGDDPDSLTZDUpload.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Server/upload/OSISUpload.java" afterPath="$PROJECT_DIR$/src/Server/upload/OSISUpload.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Server/upload/PushDownDBOCUpload.java" afterPath="$PROJECT_DIR$/src/Server/upload/PushDownDBOCUpload.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Server/upload/PushDownFHDBUpload.java" afterPath="$PROJECT_DIR$/src/Server/upload/PushDownFHDBUpload.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Server/upload/PushDownGGCUpload.java" afterPath="$PROJECT_DIR$/src/Server/upload/PushDownGGCUpload.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Server/upload/PushDownOCISUpload.java" afterPath="$PROJECT_DIR$/src/Server/upload/PushDownOCISUpload.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Server/upload/PushDownOCOSUpload.java" afterPath="$PROJECT_DIR$/src/Server/upload/PushDownOCOSUpload.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Server/upload/PushDownPPISUpload.java" afterPath="$PROJECT_DIR$/src/Server/upload/PushDownPPISUpload.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Server/upload/PushDownSLUpload.java" afterPath="$PROJECT_DIR$/src/Server/upload/PushDownSLUpload.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Server/upload/PushDownSNUpload.java" afterPath="$PROJECT_DIR$/src/Server/upload/PushDownSNUpload.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Server/upload/PushDownSOUpload.java" afterPath="$PROJECT_DIR$/src/Server/upload/PushDownSOUpload.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Server/upload/OtherInStoreUpload.java" afterPath="$PROJECT_DIR$/src/Server/upload/old/OtherInStoreUpload.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Server/upload/OtherOutStoreUpload.java" afterPath="$PROJECT_DIR$/src/Server/upload/old/OtherOutStoreUpload.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Server/upload/ProduceAndGetUpload.java" afterPath="$PROJECT_DIR$/src/Server/upload/old/ProduceAndGetUpload.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Server/upload/ProductInStoreUpload.java" afterPath="$PROJECT_DIR$/src/Server/upload/ProductInStorageActivityUpload.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Server/upload/PurchaseInStoreUpload.java" afterPath="$PROJECT_DIR$/src/Server/upload/PurchaseInStorageActivityUpload.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Server/upload/PurchaseOrderUpload.java" afterPath="$PROJECT_DIR$/src/Server/upload/PurchaseOrderActivityUpload.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Server/upload/SalesOrderStoreUpload.java" afterPath="$PROJECT_DIR$/src/Server/upload/old/SalesOrderStoreUpload.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Server/upload/SoldOutUpload.java" afterPath="$PROJECT_DIR$/src/Server/upload/SoldOutActivityUpload.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/web/WEB-INF/classes/" />
@@ -699,19 +79,165 @@
       <file leaf-file-name="OtherInStoreUpload.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Server/upload/old/OtherInStoreUpload.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
+            <state relative-caret-position="286">
               <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OtherInStoreActivityUpload.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Server/upload/OtherInStoreActivityUpload.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="638">
+              <caret line="43" column="31" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DownloadInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Server/prop/DownloadInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1012">
+              <caret line="67" column="31" lean-forward="false" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#890#891#0" expanded="false" />
+                <element signature="e#913#914#0" expanded="false" />
+                <marker date="1558668536605" expanded="true" signature="10934:11275" ph="select t1.FI... IcPrcPlyEntry" />
+                <marker date="1558668536605" expanded="true" signature="12584:12719" ph="SELECT FAcco... t_Account" />
+                <marker date="1558668536605" expanded="true" signature="13486:13541" ph="select FID,F... ICBillType" />
+                <marker date="1558668536605" expanded="true" signature="14260:14418" ph="select abs(F... ICClassType" />
+                <marker date="1558668536605" expanded="true" signature="15153:15491" ph="SELECT FType... t_SubMessage" />
+                <marker date="1558668536605" expanded="true" signature="16361:16604" ph="SELECT TOP 5... t_Item" />
+                <marker date="1558668536605" expanded="true" signature="17497:17790" ph="SELECT t1.FI... t_Item" />
+                <marker date="1558668536605" expanded="true" signature="19010:19214" ph="select FUser... t_User" />
+                <marker date="1558668536605" expanded="true" signature="20636:21059" ph="select FIsSn... t_ICItem" />
+                <marker date="1558668536605" expanded="true" signature="21199:21643" ph="select FIsSn... t_ICItem" />
+                <marker date="1558668536605" expanded="true" signature="21691:22141" ph="select FIsSn... t_ICItem" />
+                <marker date="1558668536605" expanded="true" signature="23923:23983" ph="select FItem... t_Settle" />
+                <marker date="1558668536605" expanded="true" signature="24748:25027" ph="SELECT t1.FI... t_Item" />
+                <marker date="1558668536605" expanded="true" signature="26349:26485" ph="select t2.FN... t_Barcode" />
+                <marker date="1558668536605" expanded="true" signature="26530:26669" ph="select t2.FN... t_Barcode" />
+                <marker date="1558668536605" expanded="true" signature="27708:27812" ph="select FMeas... t_Measureunit" />
+                <marker date="1558668536605" expanded="true" signature="28776:28990" ph="select FItem... t_Stock" />
+                <marker date="1558668536605" expanded="true" signature="29075:29435" ph="select t1.FI... t_Stock" />
+                <marker date="1558668536605" expanded="true" signature="29483:29645" ph="select FItem... t_Stock" />
+                <marker date="1558668536605" expanded="true" signature="30849:31003" ph="select FItem... ICInventory" />
+                <marker date="1558668536605" expanded="true" signature="32051:32335" ph="select a.FSP... t_StockPlace" />
+                <marker date="1558668536605" expanded="true" signature="33506:33653" ph="select FItem... t_Emp" />
+                <marker date="1558668536605" expanded="true" signature="34541:34602" ph="select FItem... t_Department" />
+                <marker date="1558668536605" expanded="true" signature="35604:35707" ph="select FCurr... t_Currency" />
+                <marker date="1558668536605" expanded="true" signature="35752:35849" ph="select FCurr... t_Currency" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PushDownloadList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Server/PushDown/PushDownloadList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4620">
+              <caret line="228" column="37" lean-forward="false" selection-start-line="228" selection-start-column="37" selection-end-line="228" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <marker date="1565233343872" expanded="true" signature="1569:2264" ph="select t11.F... SEOrderEntry" />
+                <marker date="1565233343872" expanded="true" signature="2359:3083" ph="select t11.F... POOrderEntry" />
+                <marker date="1565233343872" expanded="true" signature="3178:3862" ph="select t11.F... SEOutStockEntry" />
+                <marker date="1565233343872" expanded="true" signature="3957:4901" ph="select t11.F... POInstockEntry" />
+                <marker date="1565233343872" expanded="true" signature="4994:5627" ph="select '' AS... ICStockBillEntry" />
+                <marker date="1565233343872" expanded="true" signature="5714:6730" ph="select t11.F... ICStockBillEntry" />
+                <marker date="1565233343872" expanded="true" signature="6878:7477" ph="select t11.F... ICMO" />
+                <marker date="1565233343872" expanded="true" signature="7548:8343" ph="select t11.F... ICMO" />
+                <marker date="1565233343872" expanded="true" signature="8458:9139" ph="select t11.F... ICMORptEntry" />
+                <marker date="1565233343872" expanded="true" signature="9235:9983" ph="select t11.F... ICSubContractEntry" />
+                <marker date="1565233343872" expanded="true" signature="10079:10777" ph="select t11.F... PPBOMEntry" />
+                <marker date="1565233343872" expanded="true" signature="10926:11738" ph="select '0' a... ICMO" />
+                <marker date="1565233343872" expanded="true" signature="11809:12803" ph="select '' as... ICMO" />
+                <marker date="1565233343872" expanded="true" signature="12918:13567" ph="select t11.F... POOrderEntry" />
+                <marker date="1565233343872" expanded="true" signature="13665:14327" ph="select t11.F... SEOrderEntry" />
+                <marker date="1565233343872" expanded="true" signature="14411:14957" ph="select '' AS... ICMO" />
+                <marker date="1565233343872" expanded="true" signature="15065:15600" ph="select '' AS... ICMORptEntry" />
+                <marker date="1565233343872" expanded="true" signature="15692:16409" ph="select '' as... ICStockBillEntry" />
+                <marker date="1565233343872" expanded="true" signature="16495:17150" ph="select t11.F... SEOutStockEntry" />
+                <marker date="1565233343872" expanded="true" signature="17236:17875" ph="select t3.FN... t_rt_RequestGoodsEntry" />
+                <marker date="1565233343872" expanded="true" signature="17959:18315" ph="select FBill... ICStockBill" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PushDownDLBean.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Bean/PushDownDLBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OtherInStoreActivityUpload.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Server/upload/OtherInStoreActivityUpload.java">
+      <file leaf-file-name="PushDownRKBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Bean/PushDownRKBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+            <state relative-caret-position="220">
+              <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PushDownList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Server/PushDown/PushDownList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1034">
+              <caret line="64" column="18" lean-forward="false" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <marker date="1565233343822" expanded="true" signature="2683:3086" ph="select * fro... FBillNo" />
+                <marker date="1565233343822" expanded="true" signature="2697:3031" ph="select disti... SEOrder" />
+                <marker date="1565233343822" expanded="true" signature="3196:3718" ph="select * fro... FBillNo" />
+                <marker date="1565233343822" expanded="true" signature="3210:3630" ph="select disti... POOrder" />
+                <marker date="1565233343822" expanded="true" signature="3828:4410" ph="select * fro... FBillNo" />
+                <marker date="1565233343822" expanded="true" signature="3843:4321" ph="select disti... SEOutStock" />
+                <marker date="1565233343822" expanded="true" signature="4503:5193" ph="select top 1... FBillNo" />
+                <marker date="1565233343822" expanded="true" signature="4526:5137" ph="select disti... POInstock" />
+                <marker date="1565233343822" expanded="true" signature="5306:5679" ph="select * fro... FInterID" />
+                <marker date="1565233343822" expanded="true" signature="5321:5676" ph="select FInte... ICMO" />
+                <marker date="1565233343822" expanded="true" signature="5793:6489" ph="select * fro... *" />
+                <marker date="1565233343822" expanded="true" signature="5808:6485" ph="select *,ROW... FICMOInterID" />
+                <marker date="1565233343822" expanded="true" signature="5908:6471" ph="select disti... ICMO" />
+                <marker date="1565233343822" expanded="true" signature="6597:7004" ph="select FBill... ICStockBill" />
+                <marker date="1565233343822" expanded="true" signature="7092:7605" ph="select disti... ICStockBill" />
+                <marker date="1565233343822" expanded="true" signature="7754:8122" ph="select '' AS... ICMO" />
+                <marker date="1565233343822" expanded="true" signature="8195:8776" ph="select '' AS... ICMO" />
+                <marker date="1565233343822" expanded="true" signature="8888:9413" ph="select disti... ICMORpt" />
+                <marker date="1565233343822" expanded="true" signature="9507:9929" ph="select top 5... FBillNo" />
+                <marker date="1565233343822" expanded="true" signature="9529:9873" ph="select disti... ICSubContract" />
+                <marker date="1565233343822" expanded="true" signature="10023:10433" ph="select top 5... FBillNo" />
+                <marker date="1565233343822" expanded="true" signature="10045:10375" ph="select disti... ICSubContract" />
+                <marker date="1565233343822" expanded="true" signature="10585:11096" ph="select top 5... FInterID" />
+                <marker date="1565233343822" expanded="true" signature="10607:11039" ph="select disti... ICMO" />
+                <marker date="1565233343822" expanded="true" signature="11157:11914" ph="select top 5... FICMOInterID" />
+                <marker date="1565233343822" expanded="true" signature="11179:11857" ph="select disti... ICMO" />
+                <marker date="1565233343822" expanded="true" signature="12033:12588" ph="select * fro... FBillNo" />
+                <marker date="1565233343822" expanded="true" signature="12047:12500" ph="select disti... POOrder" />
+                <marker date="1565233343822" expanded="true" signature="12683:13251" ph="select * fro... FBillNo" />
+                <marker date="1565233343822" expanded="true" signature="12697:13163" ph="select disti... SEOrder" />
+                <marker date="1565233343822" expanded="true" signature="13348:13913" ph="select '' AS... ICMO" />
+                <marker date="1565233343822" expanded="true" signature="14085:14596" ph="select disti... ICMORpt" />
+                <marker date="1565233343822" expanded="true" signature="14660:15146" ph="select disti... ICMORpt" />
+                <marker date="1565233343822" expanded="true" signature="15257:15777" ph="select disti... ICStockBill" />
+                <marker date="1565233343822" expanded="true" signature="15890:16505" ph="select * fro... FBillNo" />
+                <marker date="1565233343822" expanded="true" signature="15905:16416" ph="select disti... SEOutStock" />
+                <marker date="1565233343822" expanded="true" signature="16597:17173" ph="select disti... t_rt_RequestGoods" />
+                <marker date="1565233343822" expanded="true" signature="17264:17743" ph="select disti... ICStockBill" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -767,7 +293,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Server/upload/SoldOutUpload.java" />
         <option value="$PROJECT_DIR$/src/Server/upload/OtherOutStoreUpload.java" />
         <option value="$PROJECT_DIR$/src/Server/upload/OtherInStoreUpload.java" />
         <option value="$PROJECT_DIR$/src/Server/upload/DBUpload.java" />
@@ -818,6 +343,7 @@
         <option value="$PROJECT_DIR$/src/Server/upload/OtherOutStoreActivityUpload.java" />
         <option value="$PROJECT_DIR$/src/Server/upload/old/OtherInStoreUpload.java" />
         <option value="$PROJECT_DIR$/src/Server/upload/OtherInStoreActivityUpload.java" />
+        <option value="$PROJECT_DIR$/src/Server/prop/DownloadInfo.java" />
       </list>
     </option>
   </component>
@@ -838,8 +364,8 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="848" />
-    <option name="y" value="32" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -877,9 +403,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1098,6 +621,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -2027,12 +1553,26 @@
       <workItem from="1575254266844" duration="614000" />
       <workItem from="1575862649246" duration="608000" />
       <workItem from="1576037456922" duration="463000" />
-      <workItem from="1576638321386" duration="1663000" />
+      <workItem from="1576638321386" duration="1812000" />
+      <workItem from="1576651095609" duration="1187000" />
+      <workItem from="1576822597692" duration="614000" />
+      <workItem from="1577323704810" duration="1053000" />
+      <workItem from="1577331575063" duration="293000" />
+      <workItem from="1577344358093" duration="1205000" />
+      <workItem from="1577928523652" duration="35000" />
     </task>
+    <task id="LOCAL-00001" summary="调整若干回单名称统一">
+      <created>1576640805132</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576640805132</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1059878000" />
+    <option name="totallyTimeSpent" value="1064414000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2044,7 +1584,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="848" y="32" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2056,21 +1596,20 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.5063966" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38650963" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5780911" sideWeight="0.49093816" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5780911" sideWeight="0.49093816" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13232104" sideWeight="0.49573562" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20842217" sideWeight="0.7120419" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22121535" sideWeight="0.7120419" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1380597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.04904051" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39828694" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2707889" sideWeight="0.28795812" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39828694" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2080,6 +1619,7 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="2081" y="100" width="1736" height="866" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.4978678" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2123,6 +1663,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="调整若干回单名称统一" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整若干回单名称统一" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -2142,20 +1686,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Server/upload/PushDownOCOSUpload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="52" column="76" lean-forward="false" selection-start-line="52" selection-start-column="76" selection-end-line="52" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Server/upload/PushDownPPISUpload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="52" column="71" lean-forward="false" selection-start-line="52" selection-start-column="71" selection-end-line="52" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Server/upload/PushDownPOUpload.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -2325,54 +1855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Server/PushDown/PushDownList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1034">
-          <caret line="64" column="18" lean-forward="false" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1565233343822" expanded="true" signature="2683:3086" ph="select * fro... FBillNo" />
-            <marker date="1565233343822" expanded="true" signature="2697:3031" ph="select disti... SEOrder" />
-            <marker date="1565233343822" expanded="true" signature="3196:3718" ph="select * fro... FBillNo" />
-            <marker date="1565233343822" expanded="true" signature="3210:3630" ph="select disti... POOrder" />
-            <marker date="1565233343822" expanded="true" signature="3828:4410" ph="select * fro... FBillNo" />
-            <marker date="1565233343822" expanded="true" signature="3843:4321" ph="select disti... SEOutStock" />
-            <marker date="1565233343822" expanded="true" signature="4503:5193" ph="select top 1... FBillNo" />
-            <marker date="1565233343822" expanded="true" signature="4526:5137" ph="select disti... POInstock" />
-            <marker date="1565233343822" expanded="true" signature="5306:5679" ph="select * fro... FInterID" />
-            <marker date="1565233343822" expanded="true" signature="5321:5676" ph="select FInte... ICMO" />
-            <marker date="1565233343822" expanded="true" signature="5793:6489" ph="select * fro... *" />
-            <marker date="1565233343822" expanded="true" signature="5808:6485" ph="select *,ROW... FICMOInterID" />
-            <marker date="1565233343822" expanded="true" signature="5908:6471" ph="select disti... ICMO" />
-            <marker date="1565233343822" expanded="true" signature="6597:7004" ph="select FBill... ICStockBill" />
-            <marker date="1565233343822" expanded="true" signature="7092:7605" ph="select disti... ICStockBill" />
-            <marker date="1565233343822" expanded="true" signature="7754:8122" ph="select '' AS... ICMO" />
-            <marker date="1565233343822" expanded="true" signature="8195:8776" ph="select '' AS... ICMO" />
-            <marker date="1565233343822" expanded="true" signature="8888:9413" ph="select disti... ICMORpt" />
-            <marker date="1565233343822" expanded="true" signature="9507:9929" ph="select top 5... FBillNo" />
-            <marker date="1565233343822" expanded="true" signature="9529:9873" ph="select disti... ICSubContract" />
-            <marker date="1565233343822" expanded="true" signature="10023:10433" ph="select top 5... FBillNo" />
-            <marker date="1565233343822" expanded="true" signature="10045:10375" ph="select disti... ICSubContract" />
-            <marker date="1565233343822" expanded="true" signature="10585:11096" ph="select top 5... FInterID" />
-            <marker date="1565233343822" expanded="true" signature="10607:11039" ph="select disti... ICMO" />
-            <marker date="1565233343822" expanded="true" signature="11157:11914" ph="select top 5... FICMOInterID" />
-            <marker date="1565233343822" expanded="true" signature="11179:11857" ph="select disti... ICMO" />
-            <marker date="1565233343822" expanded="true" signature="12033:12588" ph="select * fro... FBillNo" />
-            <marker date="1565233343822" expanded="true" signature="12047:12500" ph="select disti... POOrder" />
-            <marker date="1565233343822" expanded="true" signature="12683:13251" ph="select * fro... FBillNo" />
-            <marker date="1565233343822" expanded="true" signature="12697:13163" ph="select disti... SEOrder" />
-            <marker date="1565233343822" expanded="true" signature="13348:13913" ph="select '' AS... ICMO" />
-            <marker date="1565233343822" expanded="true" signature="14085:14596" ph="select disti... ICMORpt" />
-            <marker date="1565233343822" expanded="true" signature="14660:15146" ph="select disti... ICMORpt" />
-            <marker date="1565233343822" expanded="true" signature="15257:15777" ph="select disti... ICStockBill" />
-            <marker date="1565233343822" expanded="true" signature="15890:16505" ph="select * fro... FBillNo" />
-            <marker date="1565233343822" expanded="true" signature="15905:16416" ph="select disti... SEOutStock" />
-            <marker date="1565233343822" expanded="true" signature="16597:17173" ph="select disti... t_rt_RequestGoods" />
-            <marker date="1565233343822" expanded="true" signature="17264:17743" ph="select disti... ICStockBill" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Bean/CommonResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -2451,74 +1933,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Server/prop/DownloadInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11792">
-          <caret line="557" column="39" lean-forward="false" selection-start-line="557" selection-start-column="39" selection-end-line="557" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#890#891#0" expanded="false" />
-            <element signature="e#913#914#0" expanded="false" />
-            <marker date="1558668536605" expanded="true" signature="10934:11275" ph="select t1.FI... IcPrcPlyEntry" />
-            <marker date="1558668536605" expanded="true" signature="12584:12719" ph="SELECT FAcco... t_Account" />
-            <marker date="1558668536605" expanded="true" signature="13486:13541" ph="select FID,F... ICBillType" />
-            <marker date="1558668536605" expanded="true" signature="14260:14418" ph="select abs(F... ICClassType" />
-            <marker date="1558668536605" expanded="true" signature="15153:15491" ph="SELECT FType... t_SubMessage" />
-            <marker date="1558668536605" expanded="true" signature="16361:16604" ph="SELECT TOP 5... t_Item" />
-            <marker date="1558668536605" expanded="true" signature="17497:17790" ph="SELECT t1.FI... t_Item" />
-            <marker date="1558668536605" expanded="true" signature="19010:19214" ph="select FUser... t_User" />
-            <marker date="1558668536605" expanded="true" signature="20636:21059" ph="select FIsSn... t_ICItem" />
-            <marker date="1558668536605" expanded="true" signature="21199:21643" ph="select FIsSn... t_ICItem" />
-            <marker date="1558668536605" expanded="true" signature="21691:22141" ph="select FIsSn... t_ICItem" />
-            <marker date="1558668536605" expanded="true" signature="23923:23983" ph="select FItem... t_Settle" />
-            <marker date="1558668536605" expanded="true" signature="24748:25027" ph="SELECT t1.FI... t_Item" />
-            <marker date="1558668536605" expanded="true" signature="26349:26485" ph="select t2.FN... t_Barcode" />
-            <marker date="1558668536605" expanded="true" signature="26530:26669" ph="select t2.FN... t_Barcode" />
-            <marker date="1558668536605" expanded="true" signature="27708:27812" ph="select FMeas... t_Measureunit" />
-            <marker date="1558668536605" expanded="true" signature="28776:28990" ph="select FItem... t_Stock" />
-            <marker date="1558668536605" expanded="true" signature="29075:29435" ph="select t1.FI... t_Stock" />
-            <marker date="1558668536605" expanded="true" signature="29483:29645" ph="select FItem... t_Stock" />
-            <marker date="1558668536605" expanded="true" signature="30849:31003" ph="select FItem... ICInventory" />
-            <marker date="1558668536605" expanded="true" signature="32051:32335" ph="select a.FSP... t_StockPlace" />
-            <marker date="1558668536605" expanded="true" signature="33506:33653" ph="select FItem... t_Emp" />
-            <marker date="1558668536605" expanded="true" signature="34541:34602" ph="select FItem... t_Department" />
-            <marker date="1558668536605" expanded="true" signature="35604:35707" ph="select FCurr... t_Currency" />
-            <marker date="1558668536605" expanded="true" signature="35752:35849" ph="select FCurr... t_Currency" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Server/PushDown/PushDownloadList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2926">
-          <caret line="151" column="177" lean-forward="false" selection-start-line="151" selection-start-column="177" selection-end-line="151" selection-end-column="177" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1565233343872" expanded="true" signature="1569:2264" ph="select t11.F... SEOrderEntry" />
-            <marker date="1565233343872" expanded="true" signature="2359:3083" ph="select t11.F... POOrderEntry" />
-            <marker date="1565233343872" expanded="true" signature="3178:3862" ph="select t11.F... SEOutStockEntry" />
-            <marker date="1565233343872" expanded="true" signature="3957:4901" ph="select t11.F... POInstockEntry" />
-            <marker date="1565233343872" expanded="true" signature="4994:5627" ph="select '' AS... ICStockBillEntry" />
-            <marker date="1565233343872" expanded="true" signature="5714:6730" ph="select t11.F... ICStockBillEntry" />
-            <marker date="1565233343872" expanded="true" signature="6878:7477" ph="select t11.F... ICMO" />
-            <marker date="1565233343872" expanded="true" signature="7548:8343" ph="select t11.F... ICMO" />
-            <marker date="1565233343872" expanded="true" signature="8458:9139" ph="select t11.F... ICMORptEntry" />
-            <marker date="1565233343872" expanded="true" signature="9235:9983" ph="select t11.F... ICSubContractEntry" />
-            <marker date="1565233343872" expanded="true" signature="10079:10777" ph="select t11.F... PPBOMEntry" />
-            <marker date="1565233343872" expanded="true" signature="10926:11738" ph="select '0' a... ICMO" />
-            <marker date="1565233343872" expanded="true" signature="11809:12803" ph="select '' as... ICMO" />
-            <marker date="1565233343872" expanded="true" signature="12918:13567" ph="select t11.F... POOrderEntry" />
-            <marker date="1565233343872" expanded="true" signature="13665:14327" ph="select t11.F... SEOrderEntry" />
-            <marker date="1565233343872" expanded="true" signature="14411:14957" ph="select '' AS... ICMO" />
-            <marker date="1565233343872" expanded="true" signature="15065:15600" ph="select '' AS... ICMORptEntry" />
-            <marker date="1565233343872" expanded="true" signature="15692:16409" ph="select '' as... ICStockBillEntry" />
-            <marker date="1565233343872" expanded="true" signature="16495:17150" ph="select t11.F... SEOutStockEntry" />
-            <marker date="1565233343872" expanded="true" signature="17236:17875" ph="select t3.FN... t_rt_RequestGoodsEntry" />
-            <marker date="1565233343872" expanded="true" signature="17959:18315" ph="select FBill... ICStockBill" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Server/ProductSearch/WaveHouseSearchLike.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-264">
@@ -2553,7 +1967,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2569,7 +1982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2589,14 +2001,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Server/upload/SoldOutUpload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server/upload/SoldOutUpload.java" />
     <entry file="file://$PROJECT_DIR$/src/Server/upload/SoldOutActivityUpload.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -2609,7 +2014,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1408">
           <caret line="78" column="29" lean-forward="false" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2625,7 +2029,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-744">
           <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2633,7 +2036,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-774">
           <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2641,23 +2043,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-568">
           <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Server/upload/old/SalesOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server/upload/old/SalesOrder.java" />
     <entry file="file://$PROJECT_DIR$/src/Server/upload/old/PurchaseOrderUpload.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1562">
           <caret line="85" column="5" lean-forward="false" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2681,7 +2074,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2697,22 +2089,157 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-44">
           <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Server/upload/old/OtherInStoreUpload.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
+        <state relative-caret-position="286">
           <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Server/upload/OtherInStoreActivityUpload.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+        <state relative-caret-position="638">
+          <caret line="43" column="31" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server/prop/DownloadInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1012">
+          <caret line="67" column="31" lean-forward="false" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#890#891#0" expanded="false" />
+            <element signature="e#913#914#0" expanded="false" />
+            <marker date="1558668536605" expanded="true" signature="10934:11275" ph="select t1.FI... IcPrcPlyEntry" />
+            <marker date="1558668536605" expanded="true" signature="12584:12719" ph="SELECT FAcco... t_Account" />
+            <marker date="1558668536605" expanded="true" signature="13486:13541" ph="select FID,F... ICBillType" />
+            <marker date="1558668536605" expanded="true" signature="14260:14418" ph="select abs(F... ICClassType" />
+            <marker date="1558668536605" expanded="true" signature="15153:15491" ph="SELECT FType... t_SubMessage" />
+            <marker date="1558668536605" expanded="true" signature="16361:16604" ph="SELECT TOP 5... t_Item" />
+            <marker date="1558668536605" expanded="true" signature="17497:17790" ph="SELECT t1.FI... t_Item" />
+            <marker date="1558668536605" expanded="true" signature="19010:19214" ph="select FUser... t_User" />
+            <marker date="1558668536605" expanded="true" signature="20636:21059" ph="select FIsSn... t_ICItem" />
+            <marker date="1558668536605" expanded="true" signature="21199:21643" ph="select FIsSn... t_ICItem" />
+            <marker date="1558668536605" expanded="true" signature="21691:22141" ph="select FIsSn... t_ICItem" />
+            <marker date="1558668536605" expanded="true" signature="23923:23983" ph="select FItem... t_Settle" />
+            <marker date="1558668536605" expanded="true" signature="24748:25027" ph="SELECT t1.FI... t_Item" />
+            <marker date="1558668536605" expanded="true" signature="26349:26485" ph="select t2.FN... t_Barcode" />
+            <marker date="1558668536605" expanded="true" signature="26530:26669" ph="select t2.FN... t_Barcode" />
+            <marker date="1558668536605" expanded="true" signature="27708:27812" ph="select FMeas... t_Measureunit" />
+            <marker date="1558668536605" expanded="true" signature="28776:28990" ph="select FItem... t_Stock" />
+            <marker date="1558668536605" expanded="true" signature="29075:29435" ph="select t1.FI... t_Stock" />
+            <marker date="1558668536605" expanded="true" signature="29483:29645" ph="select FItem... t_Stock" />
+            <marker date="1558668536605" expanded="true" signature="30849:31003" ph="select FItem... ICInventory" />
+            <marker date="1558668536605" expanded="true" signature="32051:32335" ph="select a.FSP... t_StockPlace" />
+            <marker date="1558668536605" expanded="true" signature="33506:33653" ph="select FItem... t_Emp" />
+            <marker date="1558668536605" expanded="true" signature="34541:34602" ph="select FItem... t_Department" />
+            <marker date="1558668536605" expanded="true" signature="35604:35707" ph="select FCurr... t_Currency" />
+            <marker date="1558668536605" expanded="true" signature="35752:35849" ph="select FCurr... t_Currency" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server/PushDown/PushDownList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1034">
+          <caret line="64" column="18" lean-forward="false" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <marker date="1565233343822" expanded="true" signature="2683:3086" ph="select * fro... FBillNo" />
+            <marker date="1565233343822" expanded="true" signature="2697:3031" ph="select disti... SEOrder" />
+            <marker date="1565233343822" expanded="true" signature="3196:3718" ph="select * fro... FBillNo" />
+            <marker date="1565233343822" expanded="true" signature="3210:3630" ph="select disti... POOrder" />
+            <marker date="1565233343822" expanded="true" signature="3828:4410" ph="select * fro... FBillNo" />
+            <marker date="1565233343822" expanded="true" signature="3843:4321" ph="select disti... SEOutStock" />
+            <marker date="1565233343822" expanded="true" signature="4503:5193" ph="select top 1... FBillNo" />
+            <marker date="1565233343822" expanded="true" signature="4526:5137" ph="select disti... POInstock" />
+            <marker date="1565233343822" expanded="true" signature="5306:5679" ph="select * fro... FInterID" />
+            <marker date="1565233343822" expanded="true" signature="5321:5676" ph="select FInte... ICMO" />
+            <marker date="1565233343822" expanded="true" signature="5793:6489" ph="select * fro... *" />
+            <marker date="1565233343822" expanded="true" signature="5808:6485" ph="select *,ROW... FICMOInterID" />
+            <marker date="1565233343822" expanded="true" signature="5908:6471" ph="select disti... ICMO" />
+            <marker date="1565233343822" expanded="true" signature="6597:7004" ph="select FBill... ICStockBill" />
+            <marker date="1565233343822" expanded="true" signature="7092:7605" ph="select disti... ICStockBill" />
+            <marker date="1565233343822" expanded="true" signature="7754:8122" ph="select '' AS... ICMO" />
+            <marker date="1565233343822" expanded="true" signature="8195:8776" ph="select '' AS... ICMO" />
+            <marker date="1565233343822" expanded="true" signature="8888:9413" ph="select disti... ICMORpt" />
+            <marker date="1565233343822" expanded="true" signature="9507:9929" ph="select top 5... FBillNo" />
+            <marker date="1565233343822" expanded="true" signature="9529:9873" ph="select disti... ICSubContract" />
+            <marker date="1565233343822" expanded="true" signature="10023:10433" ph="select top 5... FBillNo" />
+            <marker date="1565233343822" expanded="true" signature="10045:10375" ph="select disti... ICSubContract" />
+            <marker date="1565233343822" expanded="true" signature="10585:11096" ph="select top 5... FInterID" />
+            <marker date="1565233343822" expanded="true" signature="10607:11039" ph="select disti... ICMO" />
+            <marker date="1565233343822" expanded="true" signature="11157:11914" ph="select top 5... FICMOInterID" />
+            <marker date="1565233343822" expanded="true" signature="11179:11857" ph="select disti... ICMO" />
+            <marker date="1565233343822" expanded="true" signature="12033:12588" ph="select * fro... FBillNo" />
+            <marker date="1565233343822" expanded="true" signature="12047:12500" ph="select disti... POOrder" />
+            <marker date="1565233343822" expanded="true" signature="12683:13251" ph="select * fro... FBillNo" />
+            <marker date="1565233343822" expanded="true" signature="12697:13163" ph="select disti... SEOrder" />
+            <marker date="1565233343822" expanded="true" signature="13348:13913" ph="select '' AS... ICMO" />
+            <marker date="1565233343822" expanded="true" signature="14085:14596" ph="select disti... ICMORpt" />
+            <marker date="1565233343822" expanded="true" signature="14660:15146" ph="select disti... ICMORpt" />
+            <marker date="1565233343822" expanded="true" signature="15257:15777" ph="select disti... ICStockBill" />
+            <marker date="1565233343822" expanded="true" signature="15890:16505" ph="select * fro... FBillNo" />
+            <marker date="1565233343822" expanded="true" signature="15905:16416" ph="select disti... SEOutStock" />
+            <marker date="1565233343822" expanded="true" signature="16597:17173" ph="select disti... t_rt_RequestGoods" />
+            <marker date="1565233343822" expanded="true" signature="17264:17743" ph="select disti... ICStockBill" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bean/PushDownRKBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server/PushDown/PushDownloadList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4620">
+          <caret line="228" column="37" lean-forward="false" selection-start-line="228" selection-start-column="37" selection-end-line="228" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <marker date="1565233343872" expanded="true" signature="1569:2264" ph="select t11.F... SEOrderEntry" />
+            <marker date="1565233343872" expanded="true" signature="2359:3083" ph="select t11.F... POOrderEntry" />
+            <marker date="1565233343872" expanded="true" signature="3178:3862" ph="select t11.F... SEOutStockEntry" />
+            <marker date="1565233343872" expanded="true" signature="3957:4901" ph="select t11.F... POInstockEntry" />
+            <marker date="1565233343872" expanded="true" signature="4994:5627" ph="select '' AS... ICStockBillEntry" />
+            <marker date="1565233343872" expanded="true" signature="5714:6730" ph="select t11.F... ICStockBillEntry" />
+            <marker date="1565233343872" expanded="true" signature="6878:7477" ph="select t11.F... ICMO" />
+            <marker date="1565233343872" expanded="true" signature="7548:8343" ph="select t11.F... ICMO" />
+            <marker date="1565233343872" expanded="true" signature="8458:9139" ph="select t11.F... ICMORptEntry" />
+            <marker date="1565233343872" expanded="true" signature="9235:9983" ph="select t11.F... ICSubContractEntry" />
+            <marker date="1565233343872" expanded="true" signature="10079:10777" ph="select t11.F... PPBOMEntry" />
+            <marker date="1565233343872" expanded="true" signature="10926:11738" ph="select '0' a... ICMO" />
+            <marker date="1565233343872" expanded="true" signature="11809:12803" ph="select '' as... ICMO" />
+            <marker date="1565233343872" expanded="true" signature="12918:13567" ph="select t11.F... POOrderEntry" />
+            <marker date="1565233343872" expanded="true" signature="13665:14327" ph="select t11.F... SEOrderEntry" />
+            <marker date="1565233343872" expanded="true" signature="14411:14957" ph="select '' AS... ICMO" />
+            <marker date="1565233343872" expanded="true" signature="15065:15600" ph="select '' AS... ICMORptEntry" />
+            <marker date="1565233343872" expanded="true" signature="15692:16409" ph="select '' as... ICStockBillEntry" />
+            <marker date="1565233343872" expanded="true" signature="16495:17150" ph="select t11.F... SEOutStockEntry" />
+            <marker date="1565233343872" expanded="true" signature="17236:17875" ph="select t3.FN... t_rt_RequestGoodsEntry" />
+            <marker date="1565233343872" expanded="true" signature="17959:18315" ph="select FBill... ICStockBill" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bean/PushDownDLBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
           <folding />
         </state>
       </provider>
