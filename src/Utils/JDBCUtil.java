@@ -6,8 +6,31 @@ import java.io.IOException;
 import java.sql.*;
 
 public class JDBCUtil {
-	
-	
+	public static Connection getSQLite4Company() throws ClassNotFoundException, SQLException{
+		Class.forName("org.sqlite.JDBC");
+		Connection conn = DriverManager.getConnection("jdbc:sqlite://c:/properties/dbCompany.db");
+		return conn;
+	}
+	public static Connection getSQLite4Company4WC() throws ClassNotFoundException, SQLException{
+		Class.forName("org.sqlite.JDBC");
+		Connection conn = DriverManager.getConnection("jdbc:sqlite://c:/properties/dbWeChatTest.db");
+		return conn;
+	}
+	public static Connection getSQLite4Statistical() throws ClassNotFoundException, SQLException{
+		Class.forName("org.sqlite.JDBC");
+		Connection conn = DriverManager.getConnection("jdbc:sqlite://c:/properties/dbStatistical.db");
+		return conn;
+	}
+	public static Connection getSQLite4UserControl() throws ClassNotFoundException, SQLException{
+		Class.forName("org.sqlite.JDBC");
+		Connection conn = DriverManager.getConnection("jdbc:sqlite://c:/properties/dbUserControl.db");
+		return conn;
+	}
+	public static Connection getSQLiteForFeedBack() throws ClassNotFoundException, SQLException{
+		Class.forName("org.sqlite.JDBC");
+		Connection conn = DriverManager.getConnection("jdbc:sqlite://c:/properties/dbWebFeedBack.db");
+		return conn;
+	}
 	
 	public static Connection getConn(String url,String password,String user) throws SQLException, ClassNotFoundException{
 		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");

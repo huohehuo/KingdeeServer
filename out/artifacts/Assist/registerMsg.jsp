@@ -5,7 +5,7 @@
   Time: 17:22
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" import="java.util.*" import="Bean.RegisterBean" import="dao.WebDao"
+<%@ page language="java" import="java.util.*" import="Bean.RegisterBean" import="Webdao.WebDao"
          contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <html>

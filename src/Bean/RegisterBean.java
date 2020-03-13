@@ -5,7 +5,12 @@ public class RegisterBean {
     public String Last_use_date;
     public String orange_juice;
     public String bool;
-
+    public String type;
+    public String val1;
+    public String val2;
+    public String val3;
+    public String val4;
+    public String val5;
     public String getRegister_code() {
         return Register_code;
     }
