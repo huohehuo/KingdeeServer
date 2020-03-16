@@ -32,13 +32,15 @@
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <link type="text/javascript" src="js/swiper.min.js">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-
-
-
-
 </head>
+<%
+    String userName = (String)session.getAttribute(Info.UserNameKey);
+    if (null == userName || "".equals(userName)){//若本地session不存在登录用户的缓存数据，则跳到登录界面
+        response.sendRedirect(request.getContextPath()+"/WebApp/login.jsp");
+    }
+%>
 <frameset rows="66px,*" frameborder="no" border="0">
-    <frame src="home_top.jsp" name="WebApp_Top" scrolling="auto">
+    <frame src="home_top.jsp" name="WebApp_Top" scrolling="no">
     <frame src="home_btm.jsp" name="WebApp_Btm" scrolling="auto">
 </frameset>
 

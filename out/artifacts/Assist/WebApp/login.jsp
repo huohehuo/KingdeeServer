@@ -10,11 +10,12 @@
          pageEncoding="UTF-8" %>
 <%@ page import="com.sun.org.apache.xpath.internal.operations.String" %>
 <%@ page import="WebSide.FeedBack" %>
+<%@ page import="WebApp.Info" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
 <head>
-    <title>注册用户管理</title>
+    <title>登录</title>
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
@@ -32,7 +33,7 @@
     <script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
 </head>
-<body>
+<body background="../img/login_bg.jpg">
 
 <%--
 <%
@@ -48,7 +49,12 @@
     String tips = (String) request.getAttribute("tips");
 %>
 <h5 ><%=tips%></h5>--%>
-
+<%
+    //置空登录用户名
+    session.setAttribute(Info.UserNameKey,null);
+//    String user = (String)session.getAttribute(Info.UserNameKey);
+//    String userName = (String)session.getAttribute(Info.UserNameKey);
+%>
 <div class="row justify-content-center" style="margin-top: 88px">
     <div  class="card" style="padding: 50px">
         <form action="../LoginAppIO" method="post">
@@ -71,14 +77,53 @@
                                        style="width: 100%;margin-right: 10px">
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary"  style="width: 100%">登录</button>
                     </form>
+
+                </div>
+
+                <button type="submit" class="btn btn-primary"  style="width: 100%">登录</button>
+                <div id="server_set" style="display: none">
+                    <div class="login-top">
+                            <div class="form-inline" style="margin-bottom: 10px">
+                                <div class="form-group" style="width: 70%">
+                                    <a style="margin-right: 20px">服务器IP:</a>
+                                    <input type="text" class="form-control" id="ip" placeholder="请输入服务器IP" name="ip"
+                                           style="width: 100%;margin-right: 10px" value="192.168.0.53">
+                                </div>
+                                <div class="form-group" style="width: 30%">
+                                    <a style="margin-right: 20px">端口:</a>
+                                    <input type="text" class="form-control" id="port" placeholder="请输入服务器端口" name="port"
+                                           style="width: 100%;margin-right: 10px" value="1433">
+                                </div>
+                            </div>
+                            <div class="form-inline" style="margin-bottom: 50px">
+                                <div class="form-group" style="width: 50%">
+                                    <a  style="margin-right: 20px">服务器用户:</a>
+                                    <input type="text" class="form-control" id="server_name" placeholder="请输入用户" name="server_name"
+                                           style="width: 100%;margin-right: 10px" value="sa">
+                                </div>
+                                <div class="form-group" style="width: 50%">
+                                    <a  style="margin-right: 20px">密码:</a>
+                                    <input type="text" class="form-control" id="server_pwd" placeholder="请输入密码" name="server_pwd"
+                                           style="width: 100%;margin-right: 10px" value="Abc123">
+                                </div>
+                            </div>
+                            <div class="form-inline" style="margin-bottom: 50px">
+                                <div class="form-group" style="width: 50%">
+                                    <a  style="margin-right: 20px">账套ID:</a>
+                                    <input type="text" class="form-control" id="database" placeholder="请输入用户" name="database"
+                                           style="width: 100%;margin-right: 10px" value="AIS20191226195119">
+                                </div>
+                            </div>
+                    </div>
                 </div>
             </div>
-
-
+            <a onclick="showSetDiv()" id="set_tip" style="text-align:right;float:right;margin-top: 5px">配置信息</a>
         </form>
     </div>
+
+
+
     <%--<div id="app">--%>
         <%--<select v-model="one">--%>
             <%--<option v-for="x in shuju">{{x.name}}{{x.famname}}</option>--%>
@@ -92,8 +137,29 @@
     <%--</div>--%>
 
 </div>
+<script type="text/javascript">
+    function showSetDiv(){
+        //获取要显示的div对象
+        var  otherDiv=document.getElementById('server_set');
+        var x=document.getElementById('set_tip');
+        if(x.innerHTML=="配置信息"){           //通过.innerHTML获取
+            otherDiv.style.display="block";//显示
+            x.innerHTML = "隐藏配置信息"
+        }else{
+            otherDiv.style.display="none";//显示
+            x.innerHTML = "配置信息"
+        }
 
+
+
+    }
+    function removeElement(id)
+    {
+        document.getElementById(id).style.display="none";
+    }
+</script>
 <script>
+
     let rua=new Vue({
         el:"#app",
         data:{

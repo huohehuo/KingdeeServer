@@ -20,18 +20,33 @@ public class LoginAppIO extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         Lg.e("进入LoginAppIO");
         // 如果不存在 session 会话，则创建一个 session 对象
-        HttpSession session = request.getSession(false);
-        String sssss = (String)session.getAttribute(Info.UserNameKey);
-        Lg.e("之前session"+sssss);
+        HttpSession session = request.getSession(true);
+//        String sssss = (String)session.getAttribute(Info.UserNameKey);
+//        Lg.e("之前session"+sssss);
         String userName = request.getParameter("user_name");
         String pwd = request.getParameter("pwd");
+        String ip = request.getParameter("ip");
+        String port = request.getParameter("port");
+        String sname = request.getParameter("server_name");
+        String  spwd = request.getParameter("server_pwd");
+        String database = request.getParameter("database");
 
-        if (userName.equals("user")){
+        if (!"".equals(userName) && !"".equals(pwd)){
             session.setAttribute(Info.UserNameKey, userName);
+            session.setAttribute(Info.UserPwdKey, pwd);
+            session.setAttribute(Info.ServerIPKey, ip);
+            session.setAttribute(Info.ServerPortKey, port);
+            session.setAttribute(Info.ServerNameKey, sname);
+            session.setAttribute(Info.ServerPwdKey, spwd);
+            session.setAttribute(Info.DatabaseKey, database);
+
+
+            Lg.e("获得数据:"+userName+pwd+ip+port+sname+spwd+database);
             response.sendRedirect(request.getContextPath()+"/WebApp/home.jsp");
         }else{
             response.sendRedirect("errorHttp.jsp");
         }
+
         // 检查网页上是否有新的访问者
 //        if (session.isNew()){
 //        session.setAttribute(userIDKey, userID);

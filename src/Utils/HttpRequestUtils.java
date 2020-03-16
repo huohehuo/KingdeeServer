@@ -78,6 +78,7 @@ public class HttpRequestUtils {
      */
     public static String sendGet(String url) {
         String result = "";
+        Lg.e("GET链接",url);
         BufferedReader in = null;
         try {
             String urlNameString = url;

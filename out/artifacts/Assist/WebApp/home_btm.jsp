@@ -85,7 +85,7 @@
 <%--<input type="button" class="btn btn-outline-primary"  value="刷新" onclick="window.location.reload();"/>--%>
 <div  style="margin:30px">
         <div class="row  justify-content-center">
-            <div class="card statiscard" onclick="location.href='CompanyList.jsp'">
+            <div class="card statiscard" onclick="location.href='StoreCheck.jsp'">
                 <h3>库存查询</h3>
             </div>
             <div class="statiscard card">
