@@ -26,7 +26,7 @@ public class ServiceVersion extends HttpServlet {
 //        Lg.e("RegisterCheck得到json：",paramter);
 //        if(paramter!=null&&!paramter.equals("")){
                 //设置最大用户数，程序根据dbother文件的用户数，与设置的对比
-                response.getWriter().write(CommonJson.getCommonJson(true,"1.0"));
+                response.getWriter().write(CommonJson.getCommonJson(true,"Standard:1.0"));
 //            try {
 //                    conn = JDBCUtil.getSQLiteConn2();
 //                    Lg.e("查找用户数据");
