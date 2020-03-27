@@ -17,6 +17,8 @@ public class InStorageNumListBean {
         public String FKFPeriod;
         public String FKFDate;
         public String FBatchNo;
+        public String FSecUnit;
+        public String FModel;
     }
 
 }
